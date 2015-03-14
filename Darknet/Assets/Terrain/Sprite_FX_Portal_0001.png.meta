@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 3ef83128b99e32e4697906f8a05c3f18
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Sprite_FX_Portal_0001_0
+    21300002: Sprite_FX_Portal_0001_1
+    21300004: Sprite_FX_Portal_0001_2
+    21300006: Sprite_FX_Portal_0001_3
+    21300008: Sprite_FX_Portal_0001_4
+    21300010: Sprite_FX_Portal_0001_5
+    21300012: Sprite_FX_Portal_0001_6
+    21300014: Sprite_FX_Portal_0001_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +33,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +50,86 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Sprite_FX_Portal_0001_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 144
+        width: 49
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 138
+        width: 57
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 116
+        width: 57
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 118
+        width: 63
+        height: 125
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 117
+        width: 67
+        height: 125
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 69
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 6
+        width: 63
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Sprite_FX_Portal_0001_7
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 3
+        width: 63
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
