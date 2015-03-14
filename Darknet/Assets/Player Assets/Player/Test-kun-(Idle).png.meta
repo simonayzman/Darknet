@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: b1b80af2e46ece4419a223885280a29d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Test-kun-(Idle)_0
+    21300002: Test-kun-(Idle)_1
+    21300004: Test-kun-(Idle)_2
+    21300006: Test-kun-(Idle)_3
+    21300008: Test-kun-(Idle)_4
+    21300010: Test-kun-(Idle)_5
+    21300012: Test-kun-(Idle)_6
+    21300014: Test-kun-(Idle)_7
+    21300016: Test-kun-(Idle)_8
+    21300018: Test-kun-(Idle)_9
+    21300020: Test-kun-(Idle)_10
+    21300022: Test-kun-(Idle)_11
+    21300024: Test-kun-(Idle)_12
+    21300026: Test-kun-(Idle)_13
+    21300028: Test-kun-(Idle)_14
+    21300030: Test-kun-(Idle)_15
+    21300032: Test-kun-(Idle)_16
+    21300034: Test-kun-(Idle)_17
+    21300036: Test-kun-(Idle)_18
+    21300038: Test-kun-(Idle)_19
+    21300040: Test-kun-(Idle)_20
+    21300042: Test-kun-(Idle)_21
+    21300044: Test-kun-(Idle)_22
+    21300046: Test-kun-(Idle)_23
+    21300048: Test-kun-(Idle)_24
+    21300050: Test-kun-(Idle)_25
+    21300052: Test-kun-(Idle)_26
+    21300054: Test-kun-(Idle)_27
+    21300056: Test-kun-(Idle)_28
+    21300058: Test-kun-(Idle)_29
+    21300060: Test-kun-(Idle)_30
+    21300062: Test-kun-(Idle)_31
+    21300064: Test-kun-(Idle)_32
+    21300066: Test-kun-(Idle)_33
+    21300068: Test-kun-(Idle)_34
+    21300070: Test-kun-(Idle)_35
+    21300072: Test-kun-(Idle)_36
+    21300074: Test-kun-(Idle)_37
+    21300076: Test-kun-(Idle)_38
+    21300078: Test-kun-(Idle)_39
+    21300080: Test-kun-(Idle)_40
+    21300082: Test-kun-(Idle)_41
+    21300084: Test-kun-(Idle)_42
+    21300086: Test-kun-(Idle)_43
+    21300088: Test-kun-(Idle)_44
+    21300090: Test-kun-(Idle)_45
+    21300092: Test-kun-(Idle)_46
+    21300094: Test-kun-(Idle)_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Test-kun-(Idle)_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 342
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 342
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 342
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 342
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 342
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 342
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 292
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_7
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 292
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 292
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 292
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 292
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 292
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 237
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 237
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 237
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 237
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 237
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 237
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 189
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_19
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 189
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 189
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 189
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 189
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 189
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 142
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 142
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 142
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_27
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 142
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_28
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 142
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_29
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 142
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 95
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_32
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 95
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_33
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 95
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 95
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_35
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 95
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 47
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 47
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 47
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 47
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_40
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 47
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_41
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 47
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_44
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_45
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_46
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Idle)_47
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

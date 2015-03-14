@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: fd16d6f2ccfcd454d889d6e8fdec2425
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Test-kun-(Walking)_0
+    21300002: Test-kun-(Walking)_1
+    21300004: Test-kun-(Walking)_2
+    21300006: Test-kun-(Walking)_3
+    21300008: Test-kun-(Walking)_4
+    21300010: Test-kun-(Walking)_5
+    21300012: Test-kun-(Walking)_6
+    21300014: Test-kun-(Walking)_7
+    21300016: Test-kun-(Walking)_8
+    21300018: Test-kun-(Walking)_9
+    21300020: Test-kun-(Walking)_10
+    21300022: Test-kun-(Walking)_11
+    21300024: Test-kun-(Walking)_12
+    21300026: Test-kun-(Walking)_13
+    21300028: Test-kun-(Walking)_14
+    21300030: Test-kun-(Walking)_15
+    21300032: Test-kun-(Walking)_16
+    21300034: Test-kun-(Walking)_17
+    21300036: Test-kun-(Walking)_18
+    21300038: Test-kun-(Walking)_19
+    21300040: Test-kun-(Walking)_20
+    21300042: Test-kun-(Walking)_21
+    21300044: Test-kun-(Walking)_22
+    21300046: Test-kun-(Walking)_23
+    21300048: Test-kun-(Walking)_24
+    21300050: Test-kun-(Walking)_25
+    21300052: Test-kun-(Walking)_26
+    21300054: Test-kun-(Walking)_27
+    21300056: Test-kun-(Walking)_28
+    21300058: Test-kun-(Walking)_29
+    21300060: Test-kun-(Walking)_30
+    21300062: Test-kun-(Walking)_31
+    21300064: Test-kun-(Walking)_32
+    21300066: Test-kun-(Walking)_33
+    21300068: Test-kun-(Walking)_34
+    21300070: Test-kun-(Walking)_35
+    21300072: Test-kun-(Walking)_36
+    21300074: Test-kun-(Walking)_37
+    21300076: Test-kun-(Walking)_38
+    21300078: Test-kun-(Walking)_39
+    21300080: Test-kun-(Walking)_40
+    21300082: Test-kun-(Walking)_41
+    21300084: Test-kun-(Walking)_42
+    21300086: Test-kun-(Walking)_43
+    21300088: Test-kun-(Walking)_44
+    21300090: Test-kun-(Walking)_45
+    21300092: Test-kun-(Walking)_46
+    21300094: Test-kun-(Walking)_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Test-kun-(Walking)_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 340
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 340
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 340
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 340
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 340
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 340
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 293
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 293
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 293
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_9
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 293
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 293
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 293
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 244
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 244
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_14
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 244
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 244
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_16
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 244
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 244
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 198
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 198
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_20
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 198
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 198
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_22
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 198
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 198
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 151
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 151
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 151
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 151
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_28
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 151
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_29
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 151
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 101
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 101
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_32
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 101
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 101
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_34
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 101
+        width: 21
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_35
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 101
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 55
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_37
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 55
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_38
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 55
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_39
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 55
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_40
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 55
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_41
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 55
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_42
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 8
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_43
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 8
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_44
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 8
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_45
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 8
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_46
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 8
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Test-kun-(Walking)_47
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
