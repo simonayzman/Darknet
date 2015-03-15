@@ -136,7 +136,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.04421663
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -156,7 +156,7 @@ Transform:
   m_GameObject: {fileID: 6617160}
   m_LocalRotation: {x: .173648193, y: 0, z: 0, w: .984807789}
   m_LocalPosition: {x: 9.93000031, y: 4.1500001, z: -17.3600006}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1264,8 +1264,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .505725265, y: .170725882}
-  m_Center: {x: -.0203166418, y: -.00449307403}
+  m_Size: {x: .482281357, y: .170725882}
+  m_Center: {x: -.00859533809, y: -.00449307635}
 --- !u!1 &1010525982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +2932,7 @@ GameObject:
   - 50: {fileID: 2035332449}
   - 114: {fileID: 2035332450}
   - 95: {fileID: 2035332451}
-  - 60: {fileID: 2035332452}
+  - 61: {fileID: 2035332452}
   m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
@@ -3020,31 +3020,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!60 &2035332452
-PolygonCollider2D:
+--- !u!61 &2035332452
+BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6032792, guid: a5538b171f0307c47bc4b5a1ae10e616,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2035332446}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .0496678352, y: .118338108}
-      - {x: .0560572147, y: .110224009}
-      - {x: -.060999155, y: .0973389149}
-      - {x: -.0763356686, y: .0853381157}
-      - {x: -.0629768372, y: .0184378624}
-      - {x: -.0368332863, y: .00478076935}
-      - {x: -.0483369827, y: .0149912834}
-      - {x: -.0116689205, y: -.00167632103}
-      - {x: .0536673069, y: -.00167655945}
-      - {x: .0506701469, y: .0103247166}
-      - {x: .0646696091, y: .0111367702}
-      - {x: .0810022354, y: .0850000381}
-      - {x: .0733354092, y: .0923376083}
+  m_Size: {x: .150315627, y: .290632367}
+  m_Center: {x: -.00536060333, y: -.0214414597}
 --- !u!1 &2101509508
 GameObject:
   m_ObjectHideFlags: 0
