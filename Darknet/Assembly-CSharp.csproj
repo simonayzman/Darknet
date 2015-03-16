@@ -51,7 +51,7 @@
      <Compile Include="Assets\Scripts\LoginView.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\TK_Ani.cs" />
+     <Compile Include="Assets\Scripts\TK_Ani.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
