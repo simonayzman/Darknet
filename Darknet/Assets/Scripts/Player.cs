@@ -1,7 +1,7 @@
-using UnityEnginge;
+using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehavior {
+public class Player : MonoBehaviour {
 	// Public game variables
 	public float speed = 10f;
 	public int currentHealth = 100;
@@ -74,7 +74,7 @@ public class Player : MonoBehavior {
 	// Called for any Start() functions.
 	void Awake() {
 		// Once you log in, set baseline for synchronization.
-		lastSynchronziationTime = Time.time;
+		lastSynchronizationTime = Time.time;
 	}
 	
 	// Update is called once per frame
