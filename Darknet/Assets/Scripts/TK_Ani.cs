@@ -2,13 +2,81 @@
 using System.Collections;
 
 public class TK_Ani : MonoBehaviour {
-	
-	// Update is called once per frame
-	void Update () {
-//	   if (Input.GetKey (KeyCode.D))
-//			animation.CrossFade ("Test-kun_Walk6");
-//	   else
-//			animation.CrossFade ("Test-kun_Idle5");
-		}	
+
+private Animator animator;	
+// Use this for initialization
+void Start(){
+ animator = this.GetComponent<Animator>();
+}
+
+
+
+// Update is called once per frame
+void Update () {
+
+//Idle Animation
+/* 6 */	 if (Input.GetKeyDown (KeyCode.D))
+			animator.SetInteger("Tidle", 6);
+			
+/* 4 */	 else if (Input.GetKeyDown (KeyCode.A))
+			animator.SetInteger("Tidle", 4);
+			
+/* 8 */	 else if (Input.GetKeyDown (KeyCode.W))
+			animator.SetInteger("Tidle", 8);
+			
+/* 5 */	 else if (Input.GetKeyDown (KeyCode.S))			
+			animator.SetInteger("Tidle", 5);
+			
+/*7*/	 else if (Input.GetKeyDown (KeyCode.A) && Input.GetKey(KeyCode.W))			
+			animator.SetInteger("Tidle", 7);
+			
+/*9*/    else if (Input.GetKeyDown (KeyCode.D) && Input.GetKey(KeyCode.W))			
+			animator.SetInteger("Tidle", 9);
+			
+/*1*/ 	 else if (Input.GetKeyDown (KeyCode.A) && Input.GetKey(KeyCode.S))			
+			animator.SetInteger("Tidle", 1);
+			
+/*3*/ 	 else if (Input.GetKeyDown (KeyCode.D) && Input.GetKey(KeyCode.S))			
+			animator.SetInteger("Tidle", 3);
+		
+
+		
+		
+//Walking Animation
+/* 6 */	 if (Input.GetKey (KeyCode.D))
+			animator.SetInteger("Twalk", 6);
+			
+/* 4 */	 else if (Input.GetKey (KeyCode.A))
+			animator.SetInteger("Twalk", 4);
+			
+/* 8 */	 else if (Input.GetKey (KeyCode.W))
+			animator.SetInteger("Twalk", 8);
+			
+/* 5 */	 else if (Input.GetKey (KeyCode.S))			
+			animator.SetInteger("Twalk", 5);
+			
+/*7*/	 else if (Input.GetKey (KeyCode.A) && Input.GetKey(KeyCode.W))			
+			animator.SetInteger("Twalk", 7);
+			
+/*9*/    else if (Input.GetKey (KeyCode.D) && Input.GetKey(KeyCode.W))			
+			animator.SetInteger("Twalk", 9);
+			
+/*1*/ 	 else if (Input.GetKey (KeyCode.A) && Input.GetKey(KeyCode.S))			
+			animator.SetInteger("Twalk", 1);
+			
+/*3*/ 	 else if (Input.GetKey (KeyCode.D) && Input.GetKey(KeyCode.S))			
+			animator.SetInteger("Twalk", 3);		
+		
+
+
 	}
 
+
+
+
+		
+
+		
+		
+	
+}
