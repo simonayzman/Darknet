@@ -2,17 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System;                        // need it for access to String
 
 public class GameController : MonoBehaviour {
 
 	private GameObject player;
 	public GameObject teacher;
-	private List<GameObject> gameItems;
 	public Text Avatar;
 	public Text Experience;
 	public Text Health;
 	private int player_level;
-	private int teacher1_state;
+	UnityEngine.UI.Image[] inventory_images;
+	public GameObject[] game_items;
 
 	// Use this for initialization
 	void Start () {
@@ -22,14 +23,22 @@ public class GameController : MonoBehaviour {
 		Avatar.text = "Name: " + player.GetComponent<Actor>().actor_name;
 		Experience.text = "XP: ";
 		Health.text = "HP: ";
-		gameItems = new List<GameObject> ();
-		GameObject[] items = GameObject.FindGameObjectsWithTag ("Item");
-
-		teacher1_state = 0;
+		/*
 		// gather all objects and make them invisible
 		foreach ( GameObject item in items ) {
 			item.SetActive(false);
 			gameItems.Add( item );
+		}
+        */
+		//get all image elements
+		inventory_images = FindObjectsOfType(typeof(Image)) as UnityEngine.UI.Image[];
+
+		int item_index;
+		float x_pos;
+		for (int i = 0; i < 4; i++) {
+			item_index = UnityEngine.Random.Range (0, 12);
+			x_pos = -1.0f + 0.5f * i;
+			Instantiate (game_items [item_index], new Vector2 (x_pos, 1), Quaternion.identity);
 		}
 	}
 	
@@ -46,16 +55,15 @@ public class GameController : MonoBehaviour {
 		return player.transform.position;
 	}
 
-	public void nextTeacherState(){
-		teacher1_state += 1;
-		foreach ( GameObject item in gameItems ) {
-			if( item.GetComponent<Item>().description == "wooden sword" ){
-				item.SetActive(true);
-			}
+	public void setInventoryImage( Sprite item_sprite, int inventory_position ){
+		// right now the way Unity searches for Images on screen they are returned in the
+		// reversed order !
+		if (inventory_position >= 0 && inventory_position < 12) {
+			inventory_images [inventory_position].sprite = item_sprite;
+			// inventory_images [inventory_position].color = Color.red; this works, changes color, but I need something better
+		} else {
+			Debug.Log ("Array index out of bounds.");
 		}
 	}
 
-	public int getTeacherState() {
-		return teacher1_state;
-	}
 }
