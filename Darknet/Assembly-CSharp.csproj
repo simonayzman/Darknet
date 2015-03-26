@@ -46,6 +46,34 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Pathfinding\Sample\Minimap.cs" />
+     <Compile Include="Assets\Pathfinding\Sample\Player1.cs" />
+     <Compile Include="Assets\Pathfinding\Sample\Seeker.cs" />
+     <Compile Include="Assets\Pathfinding\Sample\dynamicWall.cs" />
+     <Compile Include="Assets\Pathfinding\Sample\specificObstacle.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\AI.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\GridPlayer.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\GridPlayer2D.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\Lines.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\SearchPlayerAI.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\SetGrid.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\SimpleAI.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\SimpleAI2D.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\TDEnemy.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\TDManager.cs" />
+     <Compile Include="Assets\Pathfinding\Scenes\Scripts\WaypointPlayer.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\DynamicMapUpdate.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\DynamicTDGridObject.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\Node.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\NodeSearch.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\Pathfinder.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\Pathfinder2D.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\Pathfinding.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\Pathfinding2D.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\QueuePath.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\WaypointListNode.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\WaypointNode.cs" />
+     <Compile Include="Assets\Pathfinding\Scripts\WaypointPathfinder.cs" />
      <Compile Include="Assets\Scripts\CamFollowObj.cs" />
      <Compile Include="Assets\Scripts\CreateMesh.cs" />
      <Compile Include="Assets\Scripts\EditorGrid.cs" />
@@ -57,6 +85,9 @@
      <Compile Include="Assets\Scripts\TK_Ani.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="PathFinding">
+ <HintPath>C:/Users/TheGrimAngel/Desktop/Capstone/Darknet/Darknet/Assets/Pathfinding/Plugins/PathFinding.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
