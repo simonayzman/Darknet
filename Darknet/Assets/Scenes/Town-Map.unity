@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &6617160
 GameObject:
@@ -952,61 +953,6 @@ SpriteRenderer:
   m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: f89c44b07bb3ebd40b8f6e332032a7ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &839105305
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-  m_PrefabInternal: {fileID: 1663524592}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 839105307}
-  - 114: {fileID: 839105306}
-  m_Layer: 0
-  m_Name: Pathfinder2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &839105306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636,
-    type: 2}
-  m_PrefabInternal: {fileID: 1663524592}
-  m_GameObject: {fileID: 839105305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f110ba1981c74334cbc9521881f06d23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Tilesize: 32
-  HeuristicAggression: 0
-  zStart: -10
-  zEnd: 10
-  MapStartPosition: {x: -4, y: -3}
-  MapEndPosition: {x: 26, y: 16}
-  DisallowedTags:
-  - Wall
-  - OutOfBounds
-  - Obst
-  IgnoreTags:
-  - Player
-  - MainCamera
-  MoveDiagonal: 1
-  DrawMapInEditor: 0
---- !u!4 &839105307
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-  m_PrefabInternal: {fileID: 1663524592}
-  m_GameObject: {fileID: 839105305}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.69999981, y: 3.70000005, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &877575080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,114 +1943,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1211412045}
   m_RootOrder: 6
---- !u!1001 &1663524592
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: IgnoreTags.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: DisallowedTags.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 9.69999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.70000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: Tilesize
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: MapEndPosition.x
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: MapEndPosition.y
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: MapStartPosition.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: MapStartPosition.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: DrawMapInEditor
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: HeuristicAggression
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: DisallowedTags.Array.data[0]
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: DisallowedTags.Array.data[1]
-      value: OutOfBounds
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: IgnoreTags.Array.data[0]
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: IgnoreTags.Array.data[1]
-      value: MainCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: zStart
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: zEnd
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-      propertyPath: DisallowedTags.Array.data[2]
-      value: Obst
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 241d6d8df6309a446abcdbb017256636, type: 2}
-  m_RootGameObject: {fileID: 839105305}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &1686168313
 GameObject:
   m_ObjectHideFlags: 0
