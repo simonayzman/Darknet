@@ -3994,6 +3994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 555553888}
   zOffset: .600000024
+  myAgent: {fileID: 555553884}
 --- !u!95 &2035332451
 Animator:
   serializedVersion: 3
