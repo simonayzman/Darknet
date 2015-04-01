@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Agent.cs" />
+     <Compile Include="Assets\FollowCube.cs" />
      <Compile Include="Assets\Scripts\CamFollowObj.cs" />
      <Compile Include="Assets\Scripts\CreateMesh.cs" />
      <Compile Include="Assets\Scripts\EditorGrid.cs" />
