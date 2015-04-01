@@ -22,6 +22,21 @@ public class FollowCube : MonoBehaviour {
 	if (myAgent.velocity.x == 0){
 		animator.SetInteger("Direction", 0);
 	}
+	
+	else if (myAgent.velocity.x < -.5f && myAgent.velocity.z > .5f){
+		animator.SetInteger("Direction", 7);
+	}
+	else if (myAgent.velocity.x > .5f && myAgent.velocity.z > .5f){
+		animator.SetInteger("Direction", 9);
+	}
+	else if (myAgent.velocity.x < -.5f && myAgent.velocity.z < -.5f){
+		animator.SetInteger("Direction", 1);
+	}
+	else if (myAgent.velocity.x > .5f && myAgent.velocity.z < -.5f){
+		animator.SetInteger("Direction", 3);	
+	
+	}	
+	
 	else if (myAgent.velocity.z > .5f){
 		animator.SetInteger("Direction", 8);
 	}
@@ -36,19 +51,7 @@ public class FollowCube : MonoBehaviour {
 	}
 
 	
-	else if (myAgent.velocity.x < -.5f && myAgent.velocity.z > .5f){
-		animator.SetInteger("Direction", 7);
-	}
-	else if (myAgent.velocity.x > .5f && myAgent.velocity.z > .5f){
-		animator.SetInteger("Direction", 9);
-	}
-	else if (myAgent.velocity.x < -.5f && myAgent.velocity.z < -.5f){
-		animator.SetInteger("Direction", 1);
-	}
-	else if (myAgent.velocity.x > .5f && myAgent.velocity.z < -.5f){
-		animator.SetInteger("Direction", 3);	
-	
-	}
+
 
 }
 
