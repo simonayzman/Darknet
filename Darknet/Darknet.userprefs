@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FollowCube.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Transport.cs">
     <Files>
-      <File FileName="Assets\FollowCube.cs" Line="23" Column="33" />
+      <File FileName="Assets\Transport.cs" Line="7" Column="39" />
+      <File FileName="Assets\FollowCube.cs" Line="59" Column="40" />
+      <File FileName="Assets\Scripts\Movement.cs" Line="15" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
