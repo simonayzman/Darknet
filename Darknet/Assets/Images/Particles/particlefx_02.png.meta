@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 80742ce367f60754c90aedcaff9d3a76
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: particlefx_02_0
+    21300002: particlefx_02_1
+    21300004: particlefx_02_2
+    21300006: particlefx_02_3
+    21300008: particlefx_02_4
+    21300010: particlefx_02_5
+    21300012: particlefx_02_6
+    21300014: particlefx_02_7
+    21300016: particlefx_02_8
+    21300018: particlefx_02_9
+    21300020: particlefx_02_10
+    21300022: particlefx_02_11
+    21300024: particlefx_02_12
+    21300026: particlefx_02_13
+    21300028: particlefx_02_14
+    21300030: particlefx_02_15
+    21300032: particlefx_02_16
+    21300034: particlefx_02_17
+    21300036: particlefx_02_18
+    21300038: particlefx_02_19
+    21300040: particlefx_02_20
+    21300042: particlefx_02_21
+    21300044: particlefx_02_22
+    21300046: particlefx_02_23
+    21300048: particlefx_02_24
+    21300050: particlefx_02_25
+    21300052: particlefx_02_26
+    21300054: particlefx_02_27
+    21300056: particlefx_02_28
+    21300058: particlefx_02_29
+    21300060: particlefx_02_30
+    21300062: particlefx_02_31
+    21300064: particlefx_02_32
+    21300066: particlefx_02_33
+    21300068: particlefx_02_34
+    21300070: particlefx_02_35
+    21300072: particlefx_02_36
+    21300074: particlefx_02_37
+    21300076: particlefx_02_38
+    21300078: particlefx_02_39
+    21300080: particlefx_02_40
+    21300082: particlefx_02_41
+    21300084: particlefx_02_42
+    21300086: particlefx_02_43
+    21300088: particlefx_02_44
+    21300090: particlefx_02_45
+    21300092: particlefx_02_46
+    21300094: particlefx_02_47
+    21300096: particlefx_02_48
+    21300098: particlefx_02_49
+    21300100: particlefx_02_50
+    21300102: particlefx_02_51
+    21300104: particlefx_02_52
+    21300106: particlefx_02_53
+    21300108: particlefx_02_54
+    21300110: particlefx_02_55
+    21300112: particlefx_02_56
+    21300114: particlefx_02_57
+    21300116: particlefx_02_58
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: particlefx_02_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 808
+        width: 79
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_1
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 935
+        width: 71
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_2
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 935
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_3
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 930
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 803
+        width: 83
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 798
+        width: 76
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 798
+        width: 89
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_7
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 796
+        width: 97
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 796
+        width: 96
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 791
+        width: 94
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_10
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 788
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 783
+        width: 106
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 661
+        width: 114
+        height: 94
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 649
+        width: 101
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 651
+        width: 114
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 651
+        width: 112
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 654
+        width: 124
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_17
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 651
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_18
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 646
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_19
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 644
+        width: 107
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 520
+        width: 116
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_21
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 515
+        width: 109
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_22
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 517
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_23
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 517
+        width: 112
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 512
+        width: 111
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_25
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 512
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_26
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 515
+        width: 106
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_27
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 520
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 392
+        width: 107
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_30
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 393
+        width: 111
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_31
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 393
+        width: 111
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_32
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 391
+        width: 113
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_33
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 391
+        width: 112
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_34
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 391
+        width: 113
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_35
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 391
+        width: 114
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 120
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_37
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 261
+        width: 113
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_38
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 262
+        width: 117
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_39
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 262
+        width: 120
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 260
+        width: 122
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_41
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 258
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_42
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 260
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_43
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 263
+        width: 120
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 120
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 133
+        width: 115
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_46
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 132
+        width: 121
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_47
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 131
+        width: 120
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_48
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 132
+        width: 122
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_49
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 131
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_50
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 132
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_51
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 132
+        width: 122
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_52
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 120
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_54
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_55
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 5
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_56
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1
+        width: 118
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_57
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 6
+        width: 117
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: particlefx_02_58
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 6
+        width: 115
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
