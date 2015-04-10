@@ -73,7 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-  m_NavMesh: {fileID: 19400000, guid: 931c3f293070c3f45be50599af608ae7, type: 2}
+  m_NavMesh: {fileID: 19400000, guid: 238920b1326c3044dbbb459c8cf4fdc1, type: 2}
 --- !u!1 &6617160
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,8 +812,8 @@ GameObject:
   m_Name: South Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &266009829
 Transform:
@@ -1865,8 +1865,8 @@ GameObject:
   m_Name: North Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &745543388
 Transform:
@@ -3424,8 +3424,8 @@ GameObject:
   m_Name: East Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1539563421
 Transform:
@@ -4619,8 +4619,8 @@ GameObject:
   m_Name: West Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2048723986
 Transform:
