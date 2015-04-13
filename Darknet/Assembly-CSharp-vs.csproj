@@ -57,6 +57,19 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\TK_Ani.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_10_9.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_11_12.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_12_11.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_1_2.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_2_1.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_3_4.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_4_3.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_5_6.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_6_5.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_7_8.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_8_7.cs" />
+     <Compile Include="Assets\Scripts\Transport Scripts\Trans_9_10.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

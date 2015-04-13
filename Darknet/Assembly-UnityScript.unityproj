@@ -46,9 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Pathfinding\Scenes\Scripts\JSGridPlayer.js" />
-     <Compile Include="Assets\Pathfinding\Scenes\Scripts\JSGridPlayer2D.js" />
-     <Compile Include="Assets\Pathfinding\Scripts\JSPath.js" />
+     <Compile Include="Assets\Scripts\Transport Scripts\NewBehaviourScript.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
