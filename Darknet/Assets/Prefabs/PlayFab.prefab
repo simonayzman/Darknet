@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463582}
+  - 114: {fileID: 11463584}
+  m_Layer: 0
+  m_Name: DNLogin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &163584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463584}
+  - 114: {fileID: 11463586}
+  m_Layer: 0
+  m_Name: DNRegister
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &163586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463586}
+  m_Layer: 0
+  m_Name: PlayFab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &463582
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463586}
+  m_RootOrder: 0
+--- !u!4 &463584
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 463586}
+  m_RootOrder: 1
+--- !u!4 &463586
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 463582}
+  - {fileID: 463584}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11463584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db2a018374bf4a40b100d8719954657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: User Login
+  userNameLabel: User Name
+  passwordLabel: Password
+  nextScene: PF_PurchaseScene
+  previousScene: PF_UserRegisterScene
+  playfabBackground: {fileID: 2800000, guid: 1521111e624ab4ce8bbf667ae4ef8f74, type: 3}
+  cursor: {fileID: 2800000, guid: 161f990d8e95445a88b16adafdeb9bf9, type: 3}
+  accountNotFound: That account could not be found.
+  accountBanned: That account has been banned.
+  invalidPassword: Password is invalid (6-24 characters).
+  invalidUsername: Username is invalid (3-24 characters).
+  wrongPassword: Wrong password for that user.
+  LoggedIn: 0
+  NetworkManagerPrefab: {fileID: 157050, guid: f28d0c1df389c464d834326528df6b19, type: 2}
+--- !u!114 &11463586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae9138e5244b4dba9c26d8463015280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: User Registration
+  userNameLabel: User Name
+  emailLabel: Email
+  passwordLabel: Password
+  confirmPasswordLabel: Confirm Password
+  nextScene: PF_UserLoginScene
+  confirmScene: PF_PurchaseScene
+  playfabBackground: {fileID: 2800000, guid: 1521111e624ab4ce8bbf667ae4ef8f74, type: 3}
+  cursor: {fileID: 2800000, guid: 161f990d8e95445a88b16adafdeb9bf9, type: 3}
+  emailNotAvailable: That email address has already been registered.
+  usernameNotAvailable: That username has already been already taken.
+  invalidPassword: Password is invalid (6-24 characters).
+  invalidUsername: Username is invalid (3-24 characters).
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 163586}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

@@ -13,6 +13,10 @@ public class CamFollowObj : MonoBehaviour {
 	//in the inspection section of this component. 
 	public Transform target;
 
+	void Start() {
+		target = GameObject.FindWithTag("Player").transform;
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
