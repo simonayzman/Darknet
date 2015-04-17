@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using PlayFab;
 
-public class Player : MonoBehaviour {
+public class Player : Photon.MonoBehaviour {
 	// Public game variables
 	public float speed = 10f;
 	public int currentHealth = 100;
@@ -26,8 +27,9 @@ public class Player : MonoBehaviour {
 	// Automatically called every time player receives or sends data.
 	// "State synchronization" - constantly updates values over the network. Useful for data that changes often.
 	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
-	
-	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+
+	// void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 		Vector3 syncPosition = Vector3.zero;
 		Vector3 syncVelocity = Vector3.zero;
 		int health = 0;
@@ -69,18 +71,20 @@ public class Player : MonoBehaviour {
 		}
 	}
 	
-	// MonoBehavior.Awake() called whenever script instance is loaded.
-	// MonoBehavior.Awake() used to initialize variables/game state before game starts. Can only be called once during lifetime of script.
+	// MonoBehaviour.Awake() called whenever script instance is loaded.
+	// MonoBehaviour.Awake() used to initialize variables/game state before game starts. Can only be called once during lifetime of script.
 	// Called for any Start() functions.
 	void Awake() {
 		// Once you log in, set baseline for synchronization.
 		lastSynchronizationTime = Time.time;
+		// Retrieve previously stored player data from PlayFab.
+		PlayFabData.LoadData();
 	}
 	
 	// Update is called once per frame
 	void Update() {
 		// Updates based on host input
-		if (networkView.isMine) {
+		if (photonView.isMine) {
 			InputMovement();
 			InputEvents();			
 		}
@@ -112,7 +116,7 @@ public class Player : MonoBehaviour {
 	// Sync WASD movement
 	private void SyncMovement() {
 		syncTime += Time.deltaTime;
-		rigidbody2D.position = Vector2.Lerp (syncStartPosition, syncEndPosition, syncTime/ syncDelay);
+		rigidbody2D.position = Vector2.Lerp(syncStartPosition, syncEndPosition, (syncTime+1)/(syncDelay+1));
 	}
 	
 	private void InputEvents() {
@@ -126,29 +130,29 @@ public class Player : MonoBehaviour {
 	// RPC sent by caling networkView.RPC().
 	[RPC] void UpdateHP(int hitpoints) {
 		hp = hitpoints;
-		if (networkView.isMine) {
-			networkView.RPC("UpdateHP", RPCMode.OthersBuffered, hp);
+		if (photonView.isMine) {
+			photonView.RPC("UpdateHP", PhotonTargets.OthersBuffered, hp);
 		}
 	}
 	
 	[RPC] void UpdateMP(int manapoints) {
 		mp = manapoints;
-		if (networkView.isMine) {
-			networkView.RPC("UpdateMP", RPCMode.OthersBuffered, mp);
+		if (photonView.isMine) {
+			photonView.RPC("UpdateMP", PhotonTargets.OthersBuffered, mp);
 		}
 	}
 	
 	[RPC] void UpdateEXP(int experience) {
 		exp = experience;
-		if (networkView.isMine) {
-			networkView.RPC("UpdateEXP", RPCMode.OthersBuffered, exp);
+		if (photonView.isMine) {
+			photonView.RPC("UpdateEXP", PhotonTargets.OthersBuffered, exp);
 		}
 	}
 	
 	[RPC] void UpdateLVL(int LVL) {
 		level = LVL;
-		if (networkView.isMine) {
-			networkView.RPC("UpdateLVL", RPCMode.OthersBuffered, level);
+		if (photonView.isMine) {
+			photonView.RPC("UpdateLVL", PhotonTargets.OthersBuffered, level);
 		}
 	}
 	
@@ -156,8 +160,8 @@ public class Player : MonoBehaviour {
 		str = STR;
 		dex = DEX;
 		intl = INT;
-		if (networkView.isMine) {
-//			networkView.RPC("UpdateBaseStats", RPCMode.OthersBuffered,)
+		if (photonView.isMine) {
+//			photonView.RPC("UpdateBaseStats", PhotonTargets.OthersBuffered,)
 		}
 	}
 	
