@@ -292,32 +292,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 753131960}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 854528184}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -329,11 +313,13 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &82294197
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,15 +506,18 @@ MonoBehaviour:
   onBeginDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b426567696e447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+BeginDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onEndDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b456e64447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+EndDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+DragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &101583999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,11 +672,13 @@ MonoBehaviour:
   onTransitionBegin:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e426567696e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionBeginEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onTransitionComplete:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e436f6d706c6574654576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionCompleteEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &138790506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,11 +1068,13 @@ MonoBehaviour:
   onTransitionBegin:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e426567696e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionBeginEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onTransitionComplete:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e436f6d706c6574654576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionCompleteEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!225 &161117450
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1963,32 +1956,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 1077268068}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 2115343652}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -2000,15 +1977,18 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e436c69636b4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnClickEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &353961686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2564,32 +2544,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 1633846557}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 193476361}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -2600,11 +2564,13 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494571756970536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIEquipSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494571756970536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIEquipSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &496463103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,32 +3168,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 1422755507}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 0
   pressTargetGraphic: {fileID: 1808039000}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -3239,15 +3189,18 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e436c69636b4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnClickEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &602585988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,32 +3841,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 159811249}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 1514370922}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -3924,11 +3861,13 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494571756970536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIEquipSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494571756970536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIEquipSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &753131958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,32 +4035,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 570791957}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 1257781610}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -4133,11 +4056,13 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &847795009
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,26 +4428,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_HighlightedColor:
-      r: .960784316
-      g: .960784316
-      b: .960784316
-      a: 1
-    m_PressedColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -4542,47 +4451,20 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e546f67676c652b546f67676c654576656e742c20556e697479456e67696e652e55492c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
   m_TargetContent: {fileID: 1327400160}
   m_ImageTarget: {fileID: 68973334}
   m_ImageTransition: 1
   m_ImageColors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .611764729
-    m_PressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_ActiveColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActiveHighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActivePressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .717647076
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: .611764729}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_ActiveColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActiveHighlightedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActivePressedColor: {r: 1, g: 1, b: 1, a: .717647076}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_ImageSpriteState:
@@ -4603,41 +4485,13 @@ MonoBehaviour:
   m_TextTarget: {fileID: 1490272833}
   m_TextTransition: 1
   m_TextColors:
-    m_NormalColor:
-      r: .352941185
-      g: .329411775
-      b: .309803933
-      a: 1
-    m_HighlightedColor:
-      r: .490196079
-      g: .458823532
-      b: .427450985
-      a: 1
-    m_PressedColor:
-      r: .403921574
-      g: .372549027
-      b: .34117648
-      a: 1
-    m_ActiveColor:
-      r: .792156875
-      g: .796078444
-      b: .847058833
-      a: 1
-    m_ActiveHighlightedColor:
-      r: .870588243
-      g: .874509811
-      b: .917647064
-      a: 1
-    m_ActivePressedColor:
-      r: .556862772
-      g: .56078434
-      b: .600000024
-      a: 1
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: .352941185, g: .329411775, b: .309803933, a: 1}
+    m_HighlightedColor: {r: .490196079, g: .458823532, b: .427450985, a: 1}
+    m_PressedColor: {r: .403921574, g: .372549027, b: .34117648, a: 1}
+    m_ActiveColor: {r: .792156875, g: .796078444, b: .847058833, a: 1}
+    m_ActiveHighlightedColor: {r: .870588243, g: .874509811, b: .917647064, a: 1}
+    m_ActivePressedColor: {r: .556862772, g: .56078434, b: .600000024, a: 1}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
 --- !u!1 &1075585546
@@ -5035,11 +4889,13 @@ MonoBehaviour:
   onTransitionBegin:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e426567696e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionBeginEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onTransitionComplete:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e554957696e646f772b5472616e736974696f6e436f6d706c6574654576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIWindow+TransitionCompleteEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &1138441863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5228,32 +5084,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 1885261748}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 0
   pressTargetGraphic: {fileID: 496463105}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -5265,15 +5105,18 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e436c69636b4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnClickEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1257781608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5575,32 +5418,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 927068773}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 82339608}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -5612,11 +5439,13 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55494974656d536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIItemSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1327400160
 GameObject:
   m_ObjectHideFlags: 0
@@ -5814,26 +5643,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: .572549045
-      g: .572549045
-      b: .572549045
-      a: 1
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_PressedColor:
-      r: .572549045
-      g: .572549045
-      b: .572549045
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: .572549045, g: .572549045, b: .572549045, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: .572549045, g: .572549045, b: .572549045, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -5867,26 +5680,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_PressedColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -5904,21 +5701,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1138441861}
-        m_MethodName: 546f67676c65
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e652c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-    m_TypeName: 556e697479456e67696e652e55492e427574746f6e2b427574746f6e436c69636b65644576656e742c20556e697479456e67696e652e55492c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onStateChange:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549427574746f6e457874656e6465642b53746174654368616e67654576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIButtonExtended+StateChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1365841195
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,32 +7066,16 @@ MonoBehaviour:
   m_TooltipDelay: 1
   hoverTransition: 1
   hoverTargetGraphic: {fileID: 1662711043}
-  hoverNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 0
-  hoverHighlightColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  hoverNormalColor: {r: 1, g: 1, b: 1, a: 0}
+  hoverHighlightColor: {r: 1, g: 1, b: 1, a: 1}
   hoverTransitionDuration: .150000006
   hoverOverrideSprite: {fileID: 0}
   hoverNormalTrigger: 4e6f726d616c
   hoverHighlightTrigger: 486967686c696768746564
   pressTransition: 1
   pressTargetGraphic: {fileID: 56486029}
-  pressNormalColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  pressPressColor:
-    r: .674509823
-    g: .674509823
-    b: .674509823
-    a: 1
+  pressNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  pressPressColor: {r: .674509823, g: .674509823, b: .674509823, a: 1}
   pressTransitionDuration: .150000006
   pressOverrideSprite: {fileID: 0}
   pressNormalTrigger: 4e6f726d616c
@@ -7303,15 +7087,18 @@ MonoBehaviour:
   onAssign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e41737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnAssignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onUnassign:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e556e61737369676e4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnUnassignEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onClick:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e55495370656c6c536c6f742b4f6e436c69636b4576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UISpellSlot+OnClickEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1720827916
 GameObject:
   m_ObjectHideFlags: 0
@@ -7400,26 +7187,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_HighlightedColor:
-      r: .960784316
-      g: .960784316
-      b: .960784316
-      a: 1
-    m_PressedColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -7439,47 +7210,20 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e546f67676c652b546f67676c654576656e742c20556e697479456e67696e652e55492c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
   m_TargetContent: {fileID: 260421966}
   m_ImageTarget: {fileID: 226280639}
   m_ImageTransition: 1
   m_ImageColors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .611764729
-    m_PressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_ActiveColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActiveHighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActivePressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .717647076
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: .611764729}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_ActiveColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActiveHighlightedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActivePressedColor: {r: 1, g: 1, b: 1, a: .717647076}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_ImageSpriteState:
@@ -7500,41 +7244,13 @@ MonoBehaviour:
   m_TextTarget: {fileID: 208212448}
   m_TextTransition: 1
   m_TextColors:
-    m_NormalColor:
-      r: .352941185
-      g: .329411775
-      b: .309803933
-      a: 1
-    m_HighlightedColor:
-      r: .490196079
-      g: .458823532
-      b: .427450985
-      a: 1
-    m_PressedColor:
-      r: .403921574
-      g: .372549027
-      b: .34117648
-      a: 1
-    m_ActiveColor:
-      r: .792156875
-      g: .796078444
-      b: .847058833
-      a: 1
-    m_ActiveHighlightedColor:
-      r: .870588243
-      g: .874509811
-      b: .917647064
-      a: 1
-    m_ActivePressedColor:
-      r: .556862772
-      g: .56078434
-      b: .600000024
-      a: 1
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: .352941185, g: .329411775, b: .309803933, a: 1}
+    m_HighlightedColor: {r: .490196079, g: .458823532, b: .427450985, a: 1}
+    m_PressedColor: {r: .403921574, g: .372549027, b: .34117648, a: 1}
+    m_ActiveColor: {r: .792156875, g: .796078444, b: .847058833, a: 1}
+    m_ActiveHighlightedColor: {r: .870588243, g: .874509811, b: .917647064, a: 1}
+    m_ActivePressedColor: {r: .556862772, g: .56078434, b: .600000024, a: 1}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
 --- !u!1 &1724701429
@@ -7828,26 +7544,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: .572549045
-      g: .572549045
-      b: .572549045
-      a: 1
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_PressedColor:
-      r: .572549045
-      g: .572549045
-      b: .572549045
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: .572549045, g: .572549045, b: .572549045, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: .572549045, g: .572549045, b: .572549045, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -7881,26 +7581,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_PressedColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -7918,21 +7602,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 161117448}
-        m_MethodName: 546f67676c65
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 556e697479456e67696e652e4f626a6563742c20556e697479456e67696e652c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-    m_TypeName: 556e697479456e67696e652e55492e427574746f6e2b427574746f6e436c69636b65644576656e742c20556e697479456e67696e652e55492c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onStateChange:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549427574746f6e457874656e6465642b53746174654368616e67654576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIButtonExtended+StateChangeEvent, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1852800104
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,15 +7888,18 @@ MonoBehaviour:
   onBeginDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b426567696e447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+BeginDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onEndDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b456e64447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+EndDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+DragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1999778847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8479,26 +8169,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_HighlightedColor:
-      r: .960784316
-      g: .960784316
-      b: .960784316
-      a: 1
-    m_PressedColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: 1
-    m_DisabledColor:
-      r: .784313738
-      g: .784313738
-      b: .784313738
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -8518,47 +8192,20 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e546f67676c652b546f67676c654576656e742c20556e697479456e67696e652e55492c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
   m_TargetContent: {fileID: 632738814}
   m_ImageTarget: {fileID: 420626450}
   m_ImageTransition: 1
   m_ImageColors:
-    m_NormalColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_HighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .611764729
-    m_PressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
-    m_ActiveColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActiveHighlightedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: 0
-    m_ActivePressedColor:
-      r: 1
-      g: 1
-      b: 1
-      a: .717647076
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: .611764729}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_ActiveColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActiveHighlightedColor: {r: 1, g: 1, b: 1, a: 0}
+    m_ActivePressedColor: {r: 1, g: 1, b: 1, a: .717647076}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_ImageSpriteState:
@@ -8579,41 +8226,13 @@ MonoBehaviour:
   m_TextTarget: {fileID: 282157506}
   m_TextTransition: 1
   m_TextColors:
-    m_NormalColor:
-      r: .352941185
-      g: .329411775
-      b: .309803933
-      a: 1
-    m_HighlightedColor:
-      r: .490196079
-      g: .458823532
-      b: .427450985
-      a: 1
-    m_PressedColor:
-      r: .403921574
-      g: .372549027
-      b: .34117648
-      a: 1
-    m_ActiveColor:
-      r: .792156875
-      g: .796078444
-      b: .847058833
-      a: 1
-    m_ActiveHighlightedColor:
-      r: .870588243
-      g: .874509811
-      b: .917647064
-      a: 1
-    m_ActivePressedColor:
-      r: .556862772
-      g: .56078434
-      b: .600000024
-      a: 1
-    m_DisabledColor:
-      r: .250980407
-      g: .250980407
-      b: .250980407
-      a: .501960814
+    m_NormalColor: {r: .352941185, g: .329411775, b: .309803933, a: 1}
+    m_HighlightedColor: {r: .490196079, g: .458823532, b: .427450985, a: 1}
+    m_PressedColor: {r: .403921574, g: .372549027, b: .34117648, a: 1}
+    m_ActiveColor: {r: .792156875, g: .796078444, b: .847058833, a: 1}
+    m_ActiveHighlightedColor: {r: .870588243, g: .874509811, b: .917647064, a: 1}
+    m_ActivePressedColor: {r: .556862772, g: .56078434, b: .600000024, a: 1}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
 --- !u!224 &2012435847
@@ -8899,15 +8518,18 @@ MonoBehaviour:
   onBeginDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b426567696e447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+BeginDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onEndDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b456e64447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+EndDragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   onDrag:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: 556e697479456e67696e652e55492e5549447261674f626a6563742b447261674576656e742c20417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c
+    m_TypeName: UnityEngine.UI.UIDragObject+DragEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2092201350
 MonoBehaviour:
   m_ObjectHideFlags: 0

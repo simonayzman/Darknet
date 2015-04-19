@@ -38,7 +38,7 @@ namespace UnityEditor.UI
 					EditorGUI.BeginChangeCheck();
 					EditorGUILayout.PropertyField(this.m_ColorsProperty, new GUIContent("Colors"), true);
 					if (EditorGUI.EndChangeCheck())
-						(this.m_TextComponentProperty.objectReferenceValue as Text).canvasRenderer.SetColor(this.m_ColorsProperty.FindPropertyRelative("m_NormalColor").colorValue);
+						//( (Text) (this.m_TextComponentProperty.objectReferenceValue ) ).canvasRenderer.SetColor(this.m_ColorsProperty.FindPropertyRelative("m_NormalColor").colorValue);
 					
 					EditorGUI.indentLevel = (EditorGUI.indentLevel - 1);
 				}

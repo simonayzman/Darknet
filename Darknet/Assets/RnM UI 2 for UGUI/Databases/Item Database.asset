@@ -13,13 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - ID: 1
-    Name: Sword of Ages
+    Name: 53776f7264206f662041676573
     Icon: {fileID: 21300230, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
-    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Description: 4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742e
     EquipType: 1
     ItemType: 1
-    Type: Sword
-    Subtype: Two-Handed
+    Type: 53776f7264
+    Subtype: 54776f2d48616e646564
     Damage: 1200
     AttackSpeed: 3.5999999
     Block: 0
@@ -27,14 +27,13 @@ MonoBehaviour:
     Stamina: 230
     Strength: 370
   - ID: 2
-    Name: Shield of the Protector
+    Name: 536869656c64206f66207468652050726f746563746f72
     Icon: {fileID: 21300222, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
-    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      gravida luctus tincidunt.
+    Description: 4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742e20416c697175616d2067726176696461206c75637475732074696e636964756e742e
     EquipType: 2
     ItemType: 2
-    Type: Shield
-    Subtype: Off-Hand
+    Type: 536869656c64
+    Subtype: 4f66662d48616e64
     Damage: 0
     AttackSpeed: 0
     Block: 1029
@@ -42,14 +41,13 @@ MonoBehaviour:
     Stamina: 405
     Strength: 160
   - ID: 3
-    Name: Deadly Arrows
+    Name: 446561646c79204172726f7773
     Icon: {fileID: 21300234, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
-    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      gravida luctus tincidunt.
+    Description: 4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e73656374657475722061646970697363696e6720656c69742e20416c697175616d2067726176696461206c75637475732074696e636964756e742e
     EquipType: 1
     ItemType: 1
-    Type: Ranged
-    Subtype: Arrows
+    Type: 52616e676564
+    Subtype: 4172726f7773
     Damage: 246
     AttackSpeed: 1.60000002
     Block: 0
