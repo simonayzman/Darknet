@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6694320caa0568e4fb296afa762666e1, type: 3}
+  m_Name: Spell Database
+  m_EditorClassIdentifier: 
+  spells:
+  - ID: 1
+    Name: Fireball
+    Icon: {fileID: 21300236, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Range: 35
+    Cooldown: 1
+    CastTime: 1.5
+    PowerCost: 450
+    Flags: 0
+  - ID: 2
+    Name: Healing Leafs
+    Icon: {fileID: 21300224, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+      vel tortor quis nisl malesuada ultricies id nec dolor.
+    Range: 40
+    Cooldown: 3
+    CastTime: 2
+    PowerCost: 4
+    Flags: 4
+  - ID: 3
+    Name: Pyro Blast
+    Icon: {fileID: 21300228, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Range: 35
+    Cooldown: 12
+    CastTime: 4
+    PowerCost: 5400
+    Flags: 0
+  - ID: 4
+    Name: Death Kiss
+    Icon: {fileID: 21300238, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+      vel tortor quis nisl malesuada ultricies id nec dolor.
+    Range: 40
+    Cooldown: 1
+    CastTime: 0
+    PowerCost: 5
+    Flags: 6
+  - ID: 5
+    Name: Blinding Light
+    Icon: {fileID: 21300226, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+      vel tortor quis nisl malesuada ultricies id nec dolor.
+    Range: 10
+    Cooldown: 30
+    CastTime: 5
+    PowerCost: 10
+    Flags: 4
+  - ID: 6
+    Name: Intelligence
+    Icon: {fileID: 21300232, guid: 01d3d8afe4513a840a6e5e3163cab336, type: 3}
+    Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+      vel tortor quis nisl malesuada ultricies id nec dolor.
+    Range: 40
+    Cooldown: 8
+    CastTime: 0
+    PowerCost: 5
+    Flags: 6
