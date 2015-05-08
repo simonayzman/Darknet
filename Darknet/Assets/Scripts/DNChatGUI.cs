@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using ExitGames.Client.Photon.Chat;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	// Chat variables
@@ -10,7 +11,7 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	public int HistoryLengthToFetch;
 	public bool DemoPublishOnSubscribe;
 	
-	public string UserName {get;set;}
+	public string UserName;
 	private ChatChannel selectedChannel;
 	private string selectedChannelName;
 	private int selectedChannelIndex = 0;
@@ -33,21 +34,24 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	private static string WelcomeText = "Welcome to Darknet. Type '\\help' for more info.\n";
 	private static string HelpText = "";
 	
-	// public void StartDN() {
 	public void Start() {	
+		DontDestroyOnLoad(this.gameObject);
 		// This must run in the background or it will drop connection if not focused.
 		Application.runInBackground = true;
-		
+		Debug.Log("Setting chat username...");
+		this.UserName = GameObject.FindWithTag("Player").GetComponent<Player>().username;
+		// If username is not set, create a random one.
 		if (string.IsNullOrEmpty(this.UserName)) {
 			// Made up username.
+			Debug.Log("Random username...");
 			this.UserName = "user" + Environment.TickCount%99; 
-			// Set username to be the username of the user.
-			// this.Username = ?
 		}
 		
+		// Creating new chatClient instance.
 		chatClient = new ChatClient(this);
 		chatClient.Connect(ChatAppId, "1.0", this.UserName, null);
 		
+		// Moving chatwindow.
 		if (this.AlignBottom) {
 			this.ChatWindow.y = Screen.height - this.ChatWindow.height;
 		}
@@ -77,11 +81,20 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	}
 	
 	public void OnGUI() {
+		if (this.IsVisible && Input.GetKeyDown(KeyCode.Escape) && "".Equals(GUI.GetNameOfFocusedControl())) {
+			Debug.Log("Hiding chat GUI.");
+			this.IsVisible = false;
+		}
+		// Press enter to make window visible when it is invisible.
+		else if (!this.IsVisible && (Input.GetKeyDown("enter") || Input.GetKeyDown(KeyCode.Return))) {
+			Debug.Log("Showing chat GUI.");
+			this.IsVisible = true;
+		}
+		// If it is invisible, do not display the following GUI elements.
 		if (!this.IsVisible) {
 			return;
 		}
 		GUI.skin.label.wordWrap = true;
-		
 		if (Event.current.type == EventType.KeyDown && (Event.current.keyCode == KeyCode.KeypadEnter || Event.current.keyCode == KeyCode.Return)) {
 			if ("ChatInput".Equals(GUI.GetNameOfFocusedControl())) {
 				// Focus on input -> submit
@@ -91,6 +104,7 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 			}
 			else {
 				// Assign focus to input.
+				Debug.Log("Focusing chat input");
 				GUI.FocusControl("ChatInput");
 			}
 		}
@@ -162,9 +176,11 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 		
 		GUI.SetNextControlName("ChatInput");
 		inputLine = GUILayout.TextField(inputLine);
-		if (GUILayout.Button("Send", GUILayout.ExpandWidth(false))) {
+		/*
+		if (GUILayout.Button("Send", GUILayout.ExpandWidth(false)) || Input.GetKeyDown("enter") || Input.GetKeyDown(KeyCode.Return)) {
 			GuiSendsMsg();
 		}
+		*/
 		GUILayout.EndHorizontal();
 		GUILayout.EndArea();
 	}
@@ -210,7 +226,7 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 		}
 		
 		this.inputLine = "";
-		GUI.FocusControl("");
+		GUI.FocusControl("ChatInput");
 	}
 	
 	private void PostHelpToCurrentChannel() {

@@ -1,20 +1,44 @@
 using UnityEngine;
 using System.Collections;
 using PlayFab;
+using System.Collections.Generic;
 
 public class Player : Photon.MonoBehaviour {
-	// Public game variables
-	public float speed = 10f;
-	public int currentHealth = 100;
-	public int currentMana = 100;
-	public int hp = 100;
-	public int mp = 100;
-	public int exp = 0;
-	public int str = 10;
-	public int dex = 10;
-	public int intl = 10;
-	public int level = 10;
+    // Public game variables
+	public string username;
+	public List<GameObject> inventory;	
+
+	// Player profile stats loaded from PlayFab
+	public int currentEXP;
+	public int EXPToLevel;
+	public int currentLevel;
+	public int baseHP;
+	public int baseMP;
+	public int baseSTR;
+	public int baseDEX;
+	public int baseINT;
+	public int baseVIT;
+	public int basePhysAtk;
+	public int baseMagAtk;
+	public string Race;
+	public string Class;
 	
+	// Equipments
+	public string Weapon;
+	public string Offhand;
+	public string Armor;
+
+	// Calculated profile stats with addition of in-game items (and logic).
+	public int currentHealth;
+	public int currentMana;
+	public int HP;
+	public int MP;
+	public int STR;
+	public int DEX;
+	public int INT;
+	public int VIT;
+	public int physAtk;
+	public int magAtk;
 	// Private variables
 	// Sync variables are used to reduce latency issue betwee instances due to send rate. Thus use interpolation.
 	// These variables are also used for prediction to have smoother movement.
@@ -28,6 +52,9 @@ public class Player : Photon.MonoBehaviour {
 	// "State synchronization" - constantly updates values over the network. Useful for data that changes often.
 	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
 
+    void Start(){
+    	
+    }
 	// void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 		Vector3 syncPosition = Vector3.zero;
@@ -77,15 +104,13 @@ public class Player : Photon.MonoBehaviour {
 	void Awake() {
 		// Once you log in, set baseline for synchronization.
 		lastSynchronizationTime = Time.time;
-		// Retrieve previously stored player data from PlayFab.
-		PlayFabData.LoadData();
 	}
 	
 	// Update is called once per frame
 	void Update() {
 		// Updates based on host input
 		if (photonView.isMine) {
-			InputMovement();
+			gameObject.GetComponent<Movement>().InputMovement();
 			InputEvents();			
 		}
 		else {
@@ -93,25 +118,7 @@ public class Player : Photon.MonoBehaviour {
 		}
 	}
 	
-	// WASD movement.
-	void InputMovement() {
-		if (Input.GetKey(KeyCode.W)) {
-			Debug.Log("Up");
-			rigidbody2D.MovePosition(rigidbody2D.position + Vector2.up * speed * Time.deltaTime);
-		}
-		if (Input.GetKey(KeyCode.S)) {
-			Debug.Log("Down");
-			rigidbody2D.MovePosition(rigidbody2D.position - Vector2.up * speed * Time.deltaTime);
-		}
-		if (Input.GetKey(KeyCode.D)) {
-			Debug.Log("Right");
-			rigidbody2D.MovePosition(rigidbody2D.position + Vector2.right * speed * Time.deltaTime);
-		}
-		if (Input.GetKey(KeyCode.A)) {
-			Debug.Log("Left");
-			rigidbody2D.MovePosition(rigidbody2D.position - Vector2.right * speed * Time.deltaTime);
-		}
-	}
+	
 	
 	// Sync WASD movement
 	private void SyncMovement() {
@@ -124,52 +131,56 @@ public class Player : Photon.MonoBehaviour {
 		GAME LOGIC
 		*/
 	}
-	
+
 	// Remote procedure calls (RPC) useful for data that does not constantly change.
 	// Adding "[RPC]" allows it to be called over the network.
 	// RPC sent by caling networkView.RPC().
-	[RPC] void UpdateHP(int hitpoints) {
-		hp = hitpoints;
-		if (photonView.isMine) {
-			photonView.RPC("UpdateHP", PhotonTargets.OthersBuffered, hp);
+	[RPC] public void UpdateHP(int hitpoints) {
+		HP = hitpoints;
+		if (!photonView.isMine) {
+			photonView.RPC("UpdateHP", PhotonTargets.OthersBuffered, hitpoints);
 		}
 	}
 	
-	[RPC] void UpdateMP(int manapoints) {
-		mp = manapoints;
-		if (photonView.isMine) {
-			photonView.RPC("UpdateMP", PhotonTargets.OthersBuffered, mp);
-		}
+	
+	[RPC] void UpdateCurrentHP(int thisHP, string who) {
+		Debug.Log("NPC Attacked.");
+		currentHealth = thisHP;
+		
+	}
+
+	[RPC] void PickUpItem(int x_pos, int y_pos, string who){
+       if(PhotonNetwork.isMasterClient){
+       	    Debug.Log("Got request to pick up item at " + x_pos + ", " + y_pos + " from " + who);
+       	    GameObject world = GameObject.FindGameObjectWithTag ("World");
+       	    if(world){
+       	        Debug.Log("There are " + world.GetComponent<GCtrller>().items_in_game.Count + " items in da game.");
+       	    }
+       }
+       if(who == PhotonNetwork.playerName){
+       	    Debug.Log("It's my bro player who should get da item");
+       }
 	}
 	
-	[RPC] void UpdateEXP(int experience) {
-		exp = experience;
-		if (photonView.isMine) {
-			photonView.RPC("UpdateEXP", PhotonTargets.OthersBuffered, exp);
-		}
-	}
-	
-	[RPC] void UpdateLVL(int LVL) {
-		level = LVL;
-		if (photonView.isMine) {
-			photonView.RPC("UpdateLVL", PhotonTargets.OthersBuffered, level);
-		}
-	}
-	
-	[RPC] void UpdateBaseStats(int STR, int DEX, int INT) {
-		str = STR;
-		dex = DEX;
-		intl = INT;
-		if (photonView.isMine) {
-//			photonView.RPC("UpdateBaseStats", PhotonTargets.OthersBuffered,)
-		}
-	}
-	
-	[RPC] void UpdateCurrentHP(int currentHP) {
-		currentHealth = currentHP;
-	}
-	
-	[RPC] void UpdateCurrentMP(int currentMP) {
-		currentMana = currentMP;
+    public void dealDamage(GameObject other, int damage){
+    	other.GetComponent<Player>().acceptDamage(damage);
+    }
+
+    public void acceptDamage(int damage){
+    	photonView.RPC("UpdateCurrentHP", PhotonTargets.All, currentHealth - damage, PhotonNetwork.playerName);
+    }
+
+	public void hp_status(){
+        int current_hp = gameObject.GetComponent<Player>().currentHealth;
+    	Debug.Log("I am " + gameObject.name + " and have " + current_hp + "hp");
+    }
+
+    public bool isDead(){
+    	return currentHealth <= 0;
+    }
+
+    public string printProfile() {
+		//{"STR": "10", "DEX": "20", "INT": "10", "VIT": "10", "BaseHP": "100", "BaseMP": "100", "BasePhysAtk": "10", "BaseMagAtk": "5"}
+		return "{\"STR\": \""+baseSTR+"\", \"DEX\": \""+baseDEX+"\", \"INT\": \""+baseINT+"\", \"VIT\": \""+baseVIT+"\", \"BaseHP\": \""+baseHP+"\", \"BaseMP\": \""+baseMP+"\", \"BasePhysAtk\": \""+basePhysAtk+"\", \"BaseMagAtk\": \""+baseMagAtk+"\"}";
 	}
 }

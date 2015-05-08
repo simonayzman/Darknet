@@ -1,9 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UI.Tweens;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -93,25 +88,9 @@ public class Actor : MonoBehaviour {
 	}
 
 	public void pickUpItem(GameObject item, GameController g_ctrl = null ){
-
-		if (this.inventory.Count >= this.inventory_capacity)
-			return;
-
 		inventory.Add( item );
 		item.SetActive( false );
 		displayInventory ( g_ctrl );
-
-		GameObject window = GameObject.Find("Window - Inventory");
-		List<UIItemSlot> inventoryslots = new List<UIItemSlot> ( window.GetComponentsInChildren<UIItemSlot>() );
-		for (int i=0; i< this.inventory_capacity; i++) {
-			if (! inventoryslots[i].IsAssigned() ){
-				UIItemInfo itemData = new UIItemInfo();
-				itemData.Icon= item.GetComponent<Item>().GetComponent<SpriteRenderer>().sprite;
-				itemData.Name= item.GetComponent<Item>().name;
-				inventoryslots[i].Assign(itemData);
-				break;
-			}
-		}
 	}
 	
 	public void DropTopItem(Vector2 position, GameController g_ctrl = null){
@@ -130,27 +109,4 @@ public class Actor : MonoBehaviour {
 		inventory_capacity = c;
 	}
 
-	public int getAttribute (string name){
-		if (name == "hp")
-			return currentHealth;
-		else if (name == "hpmax")
-			return hp;
-		else if (name == "mp")
-			return currentMana;
-		else if (name == "mpmax")
-			return mp;
-		else if (name == "exp")
-			return exp;
-		else if (name == "expmax")
-			return xp_level [level];
-		else if (name == "inv")
-			return inventory.Count;
-		else if (name == "invmax")
-			return inventory_capacity;
-		else if (name == "lv")
-			return level;
-		else 
-			return -1;
-		}
-	}
-
+}

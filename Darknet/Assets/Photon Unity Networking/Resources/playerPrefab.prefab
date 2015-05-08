@@ -14,11 +14,10 @@ GameObject:
   - 95: {fileID: 9532792}
   - 61: {fileID: 6139872}
   - 114: {fileID: 11439872}
-  - 114: {fileID: 11445682}
-  - 114: {fileID: 11494310}
   - 114: {fileID: 11462450}
   - 114: {fileID: 11467132}
   - 60: {fileID: 6032792}
+  - 114: {fileID: 11497860}
   m_Layer: 2
   m_Name: playerPrefab
   m_TagString: Player
@@ -114,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673dd2c37780f3446897687a46140cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
 --- !u!114 &11439872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,32 +125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60a9e64a0061564489d0388019f7b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11445682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6844555fcfb4a7d9e01982dddbae93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatAppId: '1a4be5cb-c46e-4e13-9e98-fc2fbfe34d85 '
-  ChannelsToJoinOnConnect:
-  - Public
-  - Party
-  HistoryLengthToFetch: 0
-  DemoPublishOnSubscribe: 0
-  ChatWindow:
-    serializedVersion: 2
-    x: 0
-    y: -1
-    width: 250
-    height: 300
-  IsVisible: 1
-  AlignBottom: 1
-  FullScreen: 0
 --- !u!114 &11462450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,17 +161,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4329efa9f474654aaaf5ea60865673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  username: 
+  currentEXP: 0
+  EXPToLevel: 0
+  currentLevel: 0
+  baseHP: 0
+  baseMP: 0
+  baseSTR: 0
+  baseDEX: 0
+  baseINT: 0
+  baseVIT: 0
+  basePhysAtk: 0
+  baseMagAtk: 0
+  Race: 
+  Class: 
+  Weapon: 
+  Offhand: 
+  Armor: 
   currentHealth: 100
   currentMana: 100
-  hp: 100
-  mp: 100
-  exp: 0
-  str: 10
-  dex: 10
-  intl: 10
-  level: 10
---- !u!114 &11494310
+  HP: 0
+  MP: 0
+  STR: 0
+  DEX: 0
+  INT: 0
+  VIT: 0
+  physAtk: 0
+  magAtk: 0
+--- !u!114 &11497860
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -206,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 132792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 596bc1c0aca1c4482875ac99ddb2b7f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 8547213737d22f24183f25869d4a37a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21232792
