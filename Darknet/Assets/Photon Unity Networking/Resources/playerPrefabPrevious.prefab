@@ -20,7 +20,7 @@ GameObject:
   - 114: {fileID: 11467132}
   - 60: {fileID: 6032792}
   m_Layer: 2
-  m_Name: playerPrefab
+  m_Name: playerPrefabPrevious
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

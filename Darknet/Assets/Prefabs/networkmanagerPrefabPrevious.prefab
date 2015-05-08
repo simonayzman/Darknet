@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 457050}
   - 114: {fileID: 11410792}
   m_Layer: 0
-  m_Name: networkmanagerPrefab
+  m_Name: networkmanagerPrefabPrevious
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

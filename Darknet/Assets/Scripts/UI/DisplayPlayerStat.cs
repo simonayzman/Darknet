@@ -28,11 +28,11 @@ public class DisplayPlayerStat : MonoBehaviour {
 		if (actor != null) {
 
 
-			if(attribute != "")
-				value = actor.getAttribute(attribute);
+//			if(attribute != "")
+//				value = actor.getAttribute(attribute);
 
-			if(attributeMax != "")
-				valueMax = actor.getAttribute(attributeMax);
+//			if(attributeMax != "")
+//				valueMax = actor.getAttribute(attributeMax);
 
 
 			if (bar != null && value >= 0 && valueMax >= 0)

@@ -9,9 +9,15 @@ public class Movement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public void InputMovement() {
 
 		//modified conditions for built in key map. default keys for axes are wasd and arrows.
+
+
+
+
+
+
 
 		//if (Input.GetKey (KeyCode.D))
 		if (Input.GetAxisRaw ("Horizontal") > 0)

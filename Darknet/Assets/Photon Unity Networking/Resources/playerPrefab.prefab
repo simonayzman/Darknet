@@ -16,7 +16,6 @@ GameObject:
   - 114: {fileID: 11439872}
   - 114: {fileID: 11462450}
   - 114: {fileID: 11467132}
-  - 60: {fileID: 6032792}
   - 114: {fileID: 11497860}
   m_Layer: 2
   m_Name: playerPrefab
@@ -52,30 +51,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6032792
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132792}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: .0496678352, y: .118338108}
-      - {x: .0560572147, y: .110224009}
-      - {x: -.060999155, y: .0973389149}
-      - {x: -.0763356686, y: .0853381157}
-      - {x: -.0629768372, y: .0184378624}
-      - {x: -.0368332863, y: .00478076935}
-      - {x: -.0483369827, y: .0149912834}
-      - {x: -.0116689205, y: -.00167632103}
-      - {x: .0536673069, y: -.00167655945}
-      - {x: .0506701469, y: .0103247166}
-      - {x: .0646696091, y: .0111367702}
-      - {x: .0810022354, y: .0850000381}
-      - {x: .0733354092, y: .0923376083}
 --- !u!61 &6139872
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -162,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   username: 
+  inventory: []
   currentEXP: 0
   EXPToLevel: 0
   currentLevel: 0
