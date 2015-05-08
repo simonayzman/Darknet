@@ -40,4 +40,6 @@ MonoBehaviour:
   - UpdateHP
   - UpdateLVL
   - UpdateMP
+  - DestroyMe
+  - PickUpItem
   DisableAutoOpenWizard: 0
