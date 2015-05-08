@@ -18,7 +18,7 @@ public class ExpBarLabelLevel : MonoBehaviour {
 		GameObject player = GameObject.FindWithTag ("Player");
 		Actor actor = player.GetComponent<Actor> ();
 
-		label.text = "Level " + actor.getAttribute ("lv").ToString();
+//		label.text = "Level " + actor.getAttribute ("lv").ToString();
 
 	
 	}
