@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 public class DetectKeys : MonoBehaviour {
 	[SerializeField] public string slotName;
-	[SerializeField] public UISpellSlot parentSlot;
+//	[SerializeField] public UISpellSlot parentSlot;
 
 	// Use this for initialization
 	void Start (){
