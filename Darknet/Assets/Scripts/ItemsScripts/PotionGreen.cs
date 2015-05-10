@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class PotionGreen : MonoBehaviour {
-
 	private Item current;
+	
 	// Use this for initialization
 	void Start () {
 		current = this.GetComponent<Item>();

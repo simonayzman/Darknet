@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ArmorRegular : MonoBehaviour {
 	private Item current;
-	
+
 	// Use this for initialization
 	void Start () {
 		current = this.GetComponent<Item>();

@@ -1517,7 +1517,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: ac4cc7fdb7928524bbfc76908d6ac967, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 348, y: 408, z: 0}
+  m_Position: {x: 504, y: 24, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1532,7 +1532,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 71f66aad7f43de245aedebc00e2eaad6, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 1188, y: 252, z: 0}
+  m_Position: {x: 936, y: -36, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1547,7 +1547,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: f8f7623d3e1ab214eb9a77d416ccaeab, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 360, y: 108, z: 0}
+  m_Position: {x: 504, y: -96, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1577,7 +1577,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 3fd33e2b54d195f45bf20574b6e69089, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 516, y: 312, z: 0}
+  m_Position: {x: 504, y: 312, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1592,7 +1592,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 6c3b59de5c14f7845a3f8696b5ff603a, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 1068, y: 396, z: 0}
+  m_Position: {x: 936, y: 24, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1607,7 +1607,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: ec61b407f6f9a4044a9fb7747c6e84b9, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 240, y: 252, z: 0}
+  m_Position: {x: 504, y: -36, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1652,7 +1652,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 9ad83e1d0b79263449e2899f1dd41638, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 1032, y: 96, z: 0}
+  m_Position: {x: 936, y: -96, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1682,7 +1682,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: aa726f79de942984d824a239394233f1, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 720, y: 432, z: 0}
+  m_Position: {x: 720, y: -36, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1697,7 +1697,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 47a77deac6606be45be1a1134398c846, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 900, y: 312, z: 0}
+  m_Position: {x: 960, y: 312, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1727,7 +1727,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: bdc2564045949a1438638322a9a3b306, type: 2}
   m_ParentStateMachine: {fileID: 110763664}
-  m_Position: {x: 720, y: 96, z: 0}
+  m_Position: {x: 720, y: -96, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 

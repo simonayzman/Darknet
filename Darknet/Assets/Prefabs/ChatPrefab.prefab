@@ -39,11 +39,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6844555fcfb4a7d9e01982dddbae93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChatAppId: 
+  ChatAppId: 1a4be5cb-c46e-4e13-9e98-fc2fbfe34d85
   ChannelsToJoinOnConnect:
   - Public
   HistoryLengthToFetch: 0
   DemoPublishOnSubscribe: 0
+  UserName: 
   ChatWindow:
     serializedVersion: 2
     x: 0

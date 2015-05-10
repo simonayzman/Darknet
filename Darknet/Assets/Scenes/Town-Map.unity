@@ -161,8 +161,8 @@ MonoBehaviour:
   passwordLabel: Password
   nextScene: PF_PurchaseScene
   previousScene: PF_UserRegisterScene
-  playfabBackground: {fileID: 2800000, guid: 1521111e624ab4ce8bbf667ae4ef8f74, type: 3}
-  cursor: {fileID: 2800000, guid: 161f990d8e95445a88b16adafdeb9bf9, type: 3}
+  playfabBackground: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+  cursor: {fileID: 2800000, guid: 6227649e97a52314c92b4328c1f0e7cc, type: 3}
   accountNotFound: That account could not be found.
   accountBanned: That account has been banned.
   invalidPassword: Password is invalid (6-24 characters).
@@ -250,6 +250,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11463584, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
+      propertyPath: playfabBackground
+      value: 
+      objectReference: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+    - target: {fileID: 11463584, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 6227649e97a52314c92b4328c1f0e7cc, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
   m_RootGameObject: {fileID: 1474319987}
