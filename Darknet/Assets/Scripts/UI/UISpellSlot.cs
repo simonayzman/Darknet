@@ -190,8 +190,8 @@ namespace UnityEngine.UI
 			base.OnPointerClick(eventData);
 			
 			// Invoke the click event
-			if (this.onClick != null)
-				this.onClick.Invoke(this);
+			//if (this.onClick != null)
+			//	this.onClick.Invoke(this);
 			
 			SpellCast ();
 		}
@@ -236,13 +236,13 @@ namespace UnityEngine.UI
 
 		void Update (){
 
-			//if ( Input.GetAxisRaw("Action1") > 0.0) {
-				// Invoke the click event
-			//	if (this.onClick != null)
-			//		this.onClick.Invoke (this);
+			if ( Input.GetAxisRaw("Action1") > 0.0) {
+				 //Invoke the click event
+				if (this.onClick != null)
+					this.onClick.Invoke (this);
 
-			//	SpellCast ();
-			//}
+				SpellCast ();
+			}
 		}
 
 		public bool SpellCast()
