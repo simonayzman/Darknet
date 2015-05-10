@@ -21,7 +21,7 @@ public class NPCController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (theActor.isDead ()) {
+		if (theActor != null && theActor.isDead ()) {
 			GameObject.FindGameObjectWithTag("World").GetComponent<GCtrller>().npcDied(gameObject);
 		}
 	}

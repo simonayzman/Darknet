@@ -1108,7 +1108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dampTime: .150000006
-  target: {fileID: 0}
 --- !u!1 &135567629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,8 +3796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb79f0037224ea46a2330aa6fbd6cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotName: Action2
-  parentSlot: {fileID: 466269534}
 --- !u!1 &473499164
 GameObject:
   m_ObjectHideFlags: 0
@@ -5961,9 +5958,9 @@ RectTransform:
   - {fileID: 1466062736}
   m_Father: {fileID: 1635922843}
   m_RootOrder: 2
-  m_AnchorMin: {x: .5, y: 1}
-  m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 26, y: -14}
+  m_AnchorMin: {x: .5, y: 0}
+  m_AnchorMax: {x: .5, y: 0}
+  m_AnchoredPosition: {x: 26, y: 507}
   m_SizeDelta: {x: 405, y: 384}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &827076259
@@ -6763,7 +6760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c9c8fa58ad1b6428ab98c9f5f28041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 934904935}
 --- !u!114 &934904935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7119,8 +7115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb79f0037224ea46a2330aa6fbd6cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotName: Action1
-  parentSlot: {fileID: 965126947}
 --- !u!1 &972063654
 GameObject:
   m_ObjectHideFlags: 0
@@ -8076,10 +8070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da39a1364204d4fbd7b6fd8b87cd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 1072490241}
-  label: {fileID: 1924053368}
-  attribute: mp
-  attributeMax: mpmax
 --- !u!1 &1096553887
 GameObject:
   m_ObjectHideFlags: 0
@@ -8397,10 +8387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da39a1364204d4fbd7b6fd8b87cd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 1148898287}
-  label: {fileID: 1779769305}
-  attribute: hp
-  attributeMax: hpmax
 --- !u!1 &1217394627
 GameObject:
   m_ObjectHideFlags: 0
@@ -8854,10 +8840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da39a1364204d4fbd7b6fd8b87cd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 1314969873}
-  label: {fileID: 1934440078}
-  attribute: exp
-  attributeMax: expmax
 --- !u!222 &1314969872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9686,10 +9668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da39a1364204d4fbd7b6fd8b87cd3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
-  label: {fileID: 1466062737}
-  attribute: inv
-  attributeMax: invmax
 --- !u!1 &1481887988
 GameObject:
   m_ObjectHideFlags: 0
@@ -12858,7 +12836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_object: {fileID: 165586, guid: 091fdc8409751fc4796f2f64ad92687c, type: 2}
-  death_animation: {fileID: 124266, guid: 881a79238efc1054089ae21048d8f3b9, type: 2}
 --- !u!1 &2009612606
 GameObject:
   m_ObjectHideFlags: 0
@@ -13335,9 +13312,9 @@ RectTransform:
   - {fileID: 1585408288}
   m_Father: {fileID: 1635922843}
   m_RootOrder: 3
-  m_AnchorMin: {x: .5, y: 1}
-  m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: -430, y: -15}
+  m_AnchorMin: {x: .5, y: 0}
+  m_AnchorMax: {x: .5, y: 0}
+  m_AnchoredPosition: {x: -430, y: 506}
   m_SizeDelta: {x: 405, y: 390}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2110158737

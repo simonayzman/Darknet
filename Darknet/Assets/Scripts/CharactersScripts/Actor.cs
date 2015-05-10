@@ -91,7 +91,8 @@ public class Actor : MonoBehaviour {
 		}
 
 	}
-
+	
+	//Cammie Storey
 	public void pickUpItem(GameObject item, GameController g_ctrl = null ){
 
 		if (this.inventory.Count >= this.inventory_capacity)
