@@ -16,8 +16,6 @@ GameObject:
   - 114: {fileID: 11462450}
   - 114: {fileID: 11467132}
   - 114: {fileID: 11497860}
-  - 114: {fileID: 11404998}
-  - 114: {fileID: 11404996}
   m_Layer: 2
   m_Name: playerPrefab
   m_TagString: Player
@@ -78,41 +76,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11404996
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 307ca5cd8da74254ab5d892306f74dc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11404998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cc6a4987f7c684798156c56d545838, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 3.5
-  mass: 20
-  stoppingDistance: .100000001
-  slowingDistance: 1
-  decelerationRate: 2
-  rotateTransform: 0
-  rotateSpeed: 350
-  avoidRadius: 0
-  lookAheadDistance: 1
-  repath: 0
-  restrict: 0
-  closerPointOnInvalid: 0
-  debugPath: 1
 --- !u!114 &11432792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673dd2c37780f3446897687a46140cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1.5
 --- !u!114 &11462450
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -6,6 +6,7 @@ public class NetworkManager : MonoBehaviour {
     public GameObject worldPrefab;
 	public GameObject inventory;
 	public GameObject playerData;
+	public GameObject UIWindow;
 
 	void Start() {
 		PhotonNetwork.ConnectUsingSettings("0.1");
@@ -36,6 +37,7 @@ public class NetworkManager : MonoBehaviour {
     	Debug.Log("Spawning da world!");
         Instantiate(worldPrefab, Vector3.zero, Quaternion.identity);
         Instantiate(inventory, Vector3.zero, Quaternion.identity);
+        Instantiate(UIWindow, Vector3.zero, Quaternion.identity);
 		Instantiate(playerData, Vector3.zero, Quaternion.identity);
     }
 

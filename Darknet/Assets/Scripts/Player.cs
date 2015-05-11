@@ -52,6 +52,31 @@ public class Player : Photon.MonoBehaviour {
 	// "State synchronization" - constantly updates values over the network. Useful for data that changes often.
 	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
 
+	public int inventory_capacity;
+
+	public int getAttribute (string name){
+		if (name == "hp")
+			return currentHealth;
+		else if (name == "hpmax")
+			return HP;
+		else if (name == "mp")
+			return currentMana;
+		else if (name == "mpmax")
+			return MP;
+		else if (name == "exp")
+			return currentEXP;
+		else if (name == "expmax")
+			return EXPToLevel;
+		else if (name == "inv")
+			return inventory.Count;
+		else if (name == "invmax")
+			return inventory_capacity;
+		else if (name == "lv")
+			return currentLevel;
+		else 
+			return -1;
+	}
+
     void Start(){
     	
     }
@@ -111,7 +136,8 @@ public class Player : Photon.MonoBehaviour {
 		// Updates based on host input
 		if (photonView.isMine) {
 			gameObject.GetComponent<Movement>().InputMovement();
-			InputEvents();			
+			if(this.tag == "Player")
+				InputEvents();			
 		}
 		else {
 			SyncMovement();
