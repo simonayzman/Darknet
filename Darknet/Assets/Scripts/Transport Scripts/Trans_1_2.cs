@@ -3,13 +3,10 @@ using System.Collections;
 
 public class Trans_1_2 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public GameObject da_player;
+
+	void OnTriggerEnter(Collider other){
+		da_player.transform.position = new Vector3(51.55f, 6.22f, 0f);		
+	}	
+
 }

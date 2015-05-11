@@ -1,4 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8872ff3af13c322469a73a48d36a2042
+||||||| merged common ancestors
+guid: f28d0c1df389c464d834326528df6b19
+=======
+guid: ab6a305923a2ab2459e739d67310296c
+>>>>>>> pr/11
 NativeFormatImporter:
   userData: 

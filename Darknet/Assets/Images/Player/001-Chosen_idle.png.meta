@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: e0ffc663c511847499766b4994ad213b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 001-Chosen_idle_0
+    21300002: 001-Chosen_idle_1
+    21300004: 001-Chosen_idle_2
+    21300006: 001-Chosen_idle_3
+    21300008: 001-Chosen_idle_4
+    21300010: 001-Chosen_idle_5
+    21300012: 001-Chosen_idle_6
+    21300014: 001-Chosen_idle_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 001-Chosen_idle_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 521
+        width: 27
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 449
+        width: 29
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 372
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 298
+        width: 19
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 225
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 150
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 76
+        width: 19
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 001-Chosen_idle_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 25
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
