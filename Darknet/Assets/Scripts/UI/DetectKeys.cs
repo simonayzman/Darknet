@@ -19,8 +19,8 @@ public class DetectKeys : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetAxisRaw (slotName) > 0.0)
-			parentSlot.SpellCast ();
+//		if (Input.GetAxisRaw (slotName) > 0.0)
+//			parentSlot.SpellCast ();
 
 	
 	}

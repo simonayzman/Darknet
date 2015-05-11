@@ -7,14 +7,12 @@ using System.Collections.Generic;
 public class DisplayPlayerStat : MonoBehaviour {
 
 	//[SerializeField] public Actor actor;
-	private Player player;
+	private GameObject player;
 	[SerializeField] public Slider bar=null;
 	[SerializeField] public Text label;
 	[SerializeField] public string attribute;
 	[SerializeField] public string attributeMax = "";
-	[SerializeField] public string name = "";
 	private int value, valueMax;
-	private string cache;
 
 	// Use this for initialization
 	void Start () {
@@ -25,39 +23,24 @@ public class DisplayPlayerStat : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//player = GameObject.FindWithTag ("Player");
-		//Actor actor = player.GetComponent<Actor> ();
-		player = GameObject.FindWithTag ("Player").GetComponent<Player> ();
-
-		if (player == null || label == null){
-			Debug.Log ("No player/label.");
-			return;
-		}
-
-		if (player != null) {
+		player = GameObject.FindWithTag ("Player");
+		Actor actor = player.GetComponent<Actor> ();
+		if (actor != null) {
 
 
-			if(attribute != "")
-				value = player.GetComponent<Actor>().getAttribute(attribute);
+//			if(attribute != "")
+//				value = actor.getAttribute(attribute);
 
-			if(attributeMax != "")
-				valueMax = player.GetComponent<Actor>().getAttribute(attributeMax);
-				
+//			if(attributeMax != "")
+//				valueMax = actor.getAttribute(attributeMax);
 
 
 			if (bar != null && value >= 0 && valueMax >= 0)
 				bar.value = ((float) value) / ((float) valueMax);
 
-			cache = "";
-			if (name != "")
-				cache += name + ": ";
-
-			if (label != null)
-				cache += value.ToString();
+			label.text = value.ToString();
 			if (valueMax >= 0)
-				cache += "/" + valueMax.ToString();
-
-			label.text = cache;
+				label.text += "/" + valueMax.ToString();
 
 
 		}
