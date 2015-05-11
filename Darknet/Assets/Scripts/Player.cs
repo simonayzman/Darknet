@@ -22,6 +22,7 @@ public class Player : Photon.MonoBehaviour {
 	public int baseMagAtk;
 	public string Race;
 	public string Class;
+	public int inventory_capacity;
 	
 	// Equipments
 	public string Weapon;
@@ -78,6 +79,8 @@ public class Player : Photon.MonoBehaviour {
 	}
 
     void Start(){
+
+		inventory_capacity = 4;
     	
     }
 	// void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
@@ -86,6 +89,7 @@ public class Player : Photon.MonoBehaviour {
 		Vector3 syncVelocity = Vector3.zero;
 		int health = 0;
 		int mana = 0;
+
 		// If sending data
 		if (stream.isWriting) {
 			// Store current position.
@@ -208,5 +212,28 @@ public class Player : Photon.MonoBehaviour {
     public string printProfile() {
 		//{"STR": "10", "DEX": "20", "INT": "10", "VIT": "10", "BaseHP": "100", "BaseMP": "100", "BasePhysAtk": "10", "BaseMagAtk": "5"}
 		return "{\"STR\": \""+baseSTR+"\", \"DEX\": \""+baseDEX+"\", \"INT\": \""+baseINT+"\", \"VIT\": \""+baseVIT+"\", \"BaseHP\": \""+baseHP+"\", \"BaseMP\": \""+baseMP+"\", \"BasePhysAtk\": \""+basePhysAtk+"\", \"BaseMagAtk\": \""+baseMagAtk+"\"}";
+	}
+
+	public int getAttribute (string name){
+		if (name == "hp")
+			return currentHealth;
+		else if (name == "hpmax")
+			return HP;
+		else if (name == "mp")
+			return currentMana;
+		else if (name == "mpmax")
+			return MP;
+		else if (name == "exp")
+			return currentEXP;
+		else if (name == "expmax")
+			return EXPToLevel;
+		else if (name == "inv")
+			return inventory.Count;
+		else if (name == "invmax")
+			return inventory_capacity;
+		else if (name == "lv")
+			return currentLevel;
+		else 
+			return -1;
 	}
 }

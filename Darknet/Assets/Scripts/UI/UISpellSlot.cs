@@ -248,22 +248,22 @@ namespace UnityEngine.UI
 		public bool SpellCast()
 		{
 			GameObject player = GameObject.FindWithTag ("Player");
-			Actor actor = player.GetComponent<Actor> ();
+
 
 			if (this.onClick != null)
 				this.onClick.Invoke (this);
 			
 			// Handle cooldown just for the demonstration
-			if (this.IsAssigned () && this.GetSpellInfo ().PowerCost <= actor.getAttribute ("mp")) {
+			if (this.IsAssigned () && this.GetSpellInfo ().PowerCost <= player.GetComponent<Player>().getAttribute ("mp")) {
 				// If the spell is not on cooldown
 				if (this.m_Cooldown != null && !this.m_Cooldown.IsOnCooldown) {
 					// Start the cooldown
 					this.m_Cooldown.StartCooldown (this.m_SpellInfo.ID, this.m_SpellInfo.Cooldown);
-					actor.currentMana -= (int)this.GetSpellInfo ().PowerCost;
+					player.GetComponent<Player>().currentMana -= (int)this.GetSpellInfo ().PowerCost;
 					return true;
 				} 
 				else if (this.m_Cooldown == null){
-					actor.currentMana -= (int)this.GetSpellInfo ().PowerCost;
+					player.GetComponent<Player>().currentMana -= (int)this.GetSpellInfo ().PowerCost;
 					return true;
 				}
 

@@ -16,9 +16,9 @@ public class ExpBarLabelLevel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GameObject player = GameObject.FindWithTag ("Player");
-		Actor actor = player.GetComponent<Actor> ();
 
-//		label.text = "Level " + actor.getAttribute ("lv").ToString();
+		if (label != null)
+			label.text = "Level " + player.GetComponent<Player>().getAttribute ("lv").ToString();
 
 	
 	}

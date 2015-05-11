@@ -3,6 +3,15 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Player
+  - Item
+  - NPC
+  - Wall
+  - Ground
+  - Obst
+  - UI
+  - Teacher
+  - World
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
