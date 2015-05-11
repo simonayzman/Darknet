@@ -18,11 +18,21 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindWithTag ("Player");
+		if (player == null) {
+			Debug.Log ("no player");
+			return;
+		}
+		if (Avatar == null) {
+			Debug.Log ("no avatar");
+			return;
+		}
 		teacher = GameObject.FindWithTag ("Teacher");
 		player_level = player.GetComponent<Actor> ().level;
 		Avatar.text = "Name: " + player.GetComponent<Actor>().actor_name;
 		Experience.text = "XP: ";
 		Health.text = "HP: ";
+
+
 		/*
 		// gather all objects and make them invisible
 		foreach ( GameObject item in items ) {
@@ -44,6 +54,8 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (player == null || Experience == null)
+			return;
 		player_level = player.GetComponent<Actor> ().level;
 		Experience.text = "XP: " + player.GetComponent<Actor> ().exp.ToString () + "/" + 
 			player.GetComponent<Actor> ().xp_level [player_level].ToString ();
