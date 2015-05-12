@@ -42,6 +42,7 @@ MonoBehaviour:
   worldPrefab: {fileID: 198688, guid: cd732ecc35b54ea4aa757111f6894d3a, type: 2}
   inventory: {fileID: 153488, guid: cd29a1609f5c6484abc9130aed363551, type: 2}
   playerData: {fileID: 184898, guid: 3cb2969668f95ae4e9c31d3326f5e814, type: 2}
+  UIWindow: {fileID: 193010, guid: 29cd0522b72b24a34ab20d0edc370a50, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
