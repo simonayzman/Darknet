@@ -86,7 +86,7 @@ public class GCtrller : MonoBehaviour {
 		Vector3 result = obj.transform.position;
 		for(int i = 0; i < arena_panels.Length; ++i){
 		    if(Vector2.Distance(obj.transform.position, arena_panels[i].transform.position) <= 0.5f){
-                result = arena_panels[(i+1)%2].transform.position + new Vector3(-0.8f, 0.0f, 0.0f);
+                result = arena_panels[(i+1)%2].transform.position + new Vector3(0.0f, 1.0f, 0.0f);
 		    }
 		}
 		if(result != obj.transform.position){
