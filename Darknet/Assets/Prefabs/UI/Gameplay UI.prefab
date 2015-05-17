@@ -2500,7 +2500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_WindowId: 0
   m_CustomWindowId: 1
-  m_StartingState: 0
+  m_StartingState: 1
   m_EscapeKeyAction: 1
   m_Transition: 0
   m_TransitionEasing: 13
@@ -4779,7 +4779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotName: Action1
-  parentSlot: {fileID: 11493002}
 --- !u!114 &11492994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5182,7 +5181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_WindowId: 0
   m_CustomWindowId: 1
-  m_StartingState: 0
+  m_StartingState: 1
   m_EscapeKeyAction: 1
   m_Transition: 0
   m_TransitionEasing: 13
@@ -5923,7 +5922,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotName: Action2
-  parentSlot: {fileID: 11493102}
 --- !u!114 &11493096
 MonoBehaviour:
   m_ObjectHideFlags: 1
