@@ -32,7 +32,7 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	private string userIdInput = "";
 	private Vector2 scrollPos = Vector2.zero;
 	private static string WelcomeText = "Welcome to Darknet. Type '\\help' for more info.\n";
-	private static string HelpText = "";
+	private static string HelpText = "When playing game, press escape/enter to hide/show chat window. When mouse focus is in the chat window, you must click in the game world to move again.";
 	
 	public void Start() {	
 		DontDestroyOnLoad(this.gameObject);
@@ -232,7 +232,7 @@ public class DNChatGUI : MonoBehaviour, IChatClientListener {
 	private void PostHelpToCurrentChannel() {
 		ChatChannel channelForHelp = this.selectedChannel;
 		if (channelForHelp != null) {
-			channelForHelp.Add("info", DNChatGUI.HelpText);
+			channelForHelp.Add("Help info", DNChatGUI.HelpText);
 		}
 		else {
 			Debug.LogError("No channel for help.");
