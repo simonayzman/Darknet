@@ -7,6 +7,9 @@ public class Player : Photon.MonoBehaviour {
     // Public game variables
 	public string username;
 	public List<GameObject> inventory;	
+	public int xpValue; // when this player gets killed how much xp will killer get
+	public bool is_alive;    // used for the purposes of detecting when this player dies by the masterClient
+	public int player_id;   // every NPC will have unique id
 
 	// Player profile stats loaded from PlayFab
 	public int currentEXP;
@@ -22,7 +25,6 @@ public class Player : Photon.MonoBehaviour {
 	public int baseMagAtk;
 	public string Race;
 	public string Class;
-	public int inventory_capacity;
 	
 	// Equipments
 	public string Weapon;
@@ -49,9 +51,6 @@ public class Player : Photon.MonoBehaviour {
 	private Vector2 syncStartPosition = Vector2.zero;
 	private Vector2 syncEndPosition = Vector2.zero;
 	
-	// Automatically called every time player receives or sends data.
-	// "State synchronization" - constantly updates values over the network. Useful for data that changes often.
-	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
 
 	public int getAttribute (string name){
 		if (name == "hp")
@@ -75,19 +74,22 @@ public class Player : Photon.MonoBehaviour {
 		else 
 			return -1;
 	}
+	
+	// Automatically called every time player receives or sends data.
+	// "State synchronization" - constantly updates values over the network. Useful for data that changes often.
+	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
 
     void Start(){
-
-		inventory_capacity = 4;
-    	
+    	is_alive = true;
     }
+
 	// void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 		Vector3 syncPosition = Vector3.zero;
 		Vector3 syncVelocity = Vector3.zero;
 		int health = 0;
 		int mana = 0;
-
+		int xp = 0;
 		// If sending data
 		if (stream.isWriting) {
 			// Store current position.
@@ -102,6 +104,8 @@ public class Player : Photon.MonoBehaviour {
 			// Player value changes.
 			health = currentHealth;
 			stream.Serialize(ref health);
+            xp = currentEXP;
+            stream.Serialize(ref xp);
 		}
 		// If receiving data
 		else {
@@ -122,6 +126,7 @@ public class Player : Photon.MonoBehaviour {
 			// Player value updates.
 			stream.Serialize(ref health);
 			stream.Serialize(ref mana);
+			stream.Serialize(ref xp);
 		}
 	}
 	
@@ -138,8 +143,13 @@ public class Player : Photon.MonoBehaviour {
 		// Updates based on host input
 		if (photonView.isMine) {
 			gameObject.GetComponent<Movement>().InputMovement();
-			if(this.tag == "Player")
-				InputEvents();			
+				
+			if(currentHealth <= 0){
+				GameObject world = GameObject.FindGameObjectWithTag("World");
+		        if(world){
+				    world.GetComponent<GCtrller>().playerDied(gameObject);
+				}
+			}		
 		}
 		else {
 			SyncMovement();
@@ -154,11 +164,6 @@ public class Player : Photon.MonoBehaviour {
 		rigidbody2D.position = Vector2.Lerp(syncStartPosition, syncEndPosition, (syncTime+1)/(syncDelay+1));
 	}
 	
-	private void InputEvents() {
-		/*
-		GAME LOGIC
-		*/
-	}
 
 	// Remote procedure calls (RPC) useful for data that does not constantly change.
 	// Adding "[RPC]" allows it to be called over the network.
@@ -171,36 +176,53 @@ public class Player : Photon.MonoBehaviour {
 	}
 	
 	
-	[RPC] void UpdateCurrentHP(int thisHP, string who) {
-		Debug.Log("NPC Attacked.");
-		currentHealth = thisHP;
-		
+	[RPC] void UpdateCurrentHP(int damage) {	
+		if(currentHealth > 0 && damage >= currentHealth){
+			Debug.Log(PhotonNetwork.playerName + " claims the kill.");
+			photonView.RPC("ClaimKill", PhotonTargets.AllBuffered, this.player_id, PhotonNetwork.playerName);
+		}
+
+		currentHealth -= damage;
 	}
 
-	[RPC] void PickUpItem(int x_pos, int y_pos, string who){
-       if(PhotonNetwork.isMasterClient){
-       	    Debug.Log("Got request to pick up item at " + x_pos + ", " + y_pos + " from " + who);
-       	    GameObject world = GameObject.FindGameObjectWithTag ("World");
-       	    if(world){
-       	        Debug.Log("There are " + world.GetComponent<GCtrller>().items_in_game.Count + " items in da game.");
-       	    }
-       }
-       if(who == PhotonNetwork.playerName){
-       	    Debug.Log("It's my bro player who should get da item");
-       }
-	}
-	
+    [RPC] void ClaimKill(int playa_id, string client){
+    	GameObject world = GameObject.FindGameObjectWithTag("World");
+    	if(world){
+    		GameObject playa = world.GetComponent<GCtrller>().npcs_in_game[playa_id] as GameObject;
+	        if(playa && PhotonNetwork.isMasterClient && playa.GetComponent<Player>().player_id == playa_id){
+	        	Debug.Log("Got Kill Claim from " + client);
+	        	playa.GetComponent<Player>().is_alive = false;
+	        	photonView.RPC("UpdatePlayerEXP", PhotonTargets.AllBuffered, playa.GetComponent<Player>().xpValue, client);
+	        }
+	    }
+    }
+
+    [RPC] void UpdatePlayerEXP(int deltaXP, string client) {
+        if(PhotonNetwork.playerName == client){
+        	Debug.Log("Kill granted to: " + client + " worth " + deltaXP + " xp points.");
+        	GameObject world = GameObject.FindGameObjectWithTag("World");
+        	if(world){
+        		GameObject player = world.GetComponent<GCtrller>().da_player;
+        		if(player){
+        			player.GetComponent<Player>().currentEXP += deltaXP;
+        		}
+        	}
+        }
+    }
+
     public void dealDamage(GameObject other, int damage){
     	other.GetComponent<Player>().acceptDamage(damage);
     }
 
     public void acceptDamage(int damage){
-    	photonView.RPC("UpdateCurrentHP", PhotonTargets.All, currentHealth - damage, PhotonNetwork.playerName);
+    	photonView.RPC("UpdateCurrentHP", PhotonTargets.All, damage);
+    	if(gameObject.tag == "NPC"){
+    		gameObject.GetComponent<NPCController>().fightBack();
+    	}
     }
 
 	public void hp_status(){
-        int current_hp = gameObject.GetComponent<Player>().currentHealth;
-    	Debug.Log("I am " + gameObject.name + " and have " + current_hp + "hp");
+    	Debug.Log("I am " + PhotonNetwork.playerName + " and have " + currentEXP + " xp");
     }
 
     public bool isDead(){
@@ -212,4 +234,42 @@ public class Player : Photon.MonoBehaviour {
 		return "{\"STR\": \""+baseSTR+"\", \"DEX\": \""+baseDEX+"\", \"INT\": \""+baseINT+"\", \"VIT\": \""+baseVIT+"\", \"BaseHP\": \""+baseHP+"\", \"BaseMP\": \""+baseMP+"\", \"BasePhysAtk\": \""+basePhysAtk+"\", \"BaseMagAtk\": \""+baseMagAtk+"\"}";
 	}
 
+    public void setID(int id){
+    	player_id = id;
+    }
+
+	[RPC] void PickUpItem(int x_pos, int y_pos, string who){
+        if(PhotonNetwork.isMasterClient){
+        	int item_index = -1;
+       	    Debug.Log("Got request to pick up item at " + x_pos + ", " + y_pos + " from " + who);
+       	    GCtrller world = GameObject.FindGameObjectWithTag("World").GetComponent<GCtrller>();
+       	    if( world ){
+	       	    for(int i = 0; i < world. items_in_game.Count; ++i){
+	       	    	Debug.Log(world.items_in_game[i].name + " at: " + world.items_in_game[i].transform.position.x +
+	       	    		", " + world.items_in_game[i].transform.position.y);
+	                if(world.items_in_game[i].transform.position.x == x_pos && 
+	                   world.items_in_game[i].transform.position.y == y_pos &&
+	                   !world.items_in_game[i].GetComponent<Item>().is_picked){
+	                   	string item_name = world.items_in_game[i].name;
+	                    world.items_in_game[i].GetComponent<Item>().is_picked = true;
+	                	Debug.Log("Item available to be picked up");
+                        item_index = i;
+	                    photonView.RPC("AssignItem", PhotonTargets.AllBuffered, item_name, who); 
+	                }
+	       	    }
+	       	    PhotonNetwork.Destroy (world.items_in_game[item_index]);
+	       	    world.items_in_game.Remove(world.items_in_game[item_index]);
+	       	    Debug.Log("There are " + world.items_in_game.Count + " items in the game");
+	       	}
+
+        }
+       
+	}
+
+    [RPC] void AssignItem(string item, string who) {
+    	if(who == PhotonNetwork.playerName){
+    		Debug.Log("I: " + PhotonNetwork.playerName + " got permission to pick up item: " + item );
+    	}
+    }
+    
 }

@@ -2,18 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class GCtrller : MonoBehaviour {
+public class GCtrller :  Photon.MonoBehaviour {
 	public int MAX_NO_ENEMIES;
 	public GameObject player;
 	public GameObject[] all_npcs; 	
 	public GameObject[] all_game_items;
-	private List<GameObject> npcs_in_game;
+	public Hashtable npcs_in_game;
 	public List<GameObject> items_in_game;
     public GameObject player_camera;
     public GameObject da_player;
     private GameObject[] arena_panels;
     public GameObject death_animation;
     public string da_name;
+    private int npc_id;                       // counter that will provide unique id for each NPC
     
 	// Use this for initialization
 	void Start () {
@@ -21,10 +22,12 @@ public class GCtrller : MonoBehaviour {
 		//PhotonNetwork.playerName = da_name;
 		bool am_i = PhotonNetwork.isMasterClient;
 		Debug.Log("Am I master: " + am_i);
-       
+
+        npc_id = 0;
+        npcs_in_game = new Hashtable();
 
 		SpawnPlayer ();
-        npcs_in_game = countNPC();
+        
         
 		if(PhotonNetwork.isMasterClient){
 			addNPC();
@@ -42,24 +45,13 @@ public class GCtrller : MonoBehaviour {
 	}
 
 
-    private List<GameObject> countNPC(){
-    	List<GameObject> result = new List<GameObject>();
-    	GameObject[] living_npc = GameObject.FindGameObjectsWithTag ("NPC");
-		for(int i = 0; i < living_npc.Length; ++i){
-			result.Add(living_npc[i]);
-		}
-		return result;
-    }
-
     private void addNPC(){
-    	Debug.Log("Adding NPCs");
         while(npcs_in_game.Count < MAX_NO_ENEMIES){
           spawnNPC(Random.Range(-61,-54), Random.Range(9, 15));
 		}
     }
 
 	private void SpawnPlayer() {
-		Debug.Log("Spawning da playa.");
 		Vector3 spawnlocation = new Vector3(-58.2f, -6.4f, 0.0f);
 		da_player = PhotonNetwork.Instantiate(player.name, spawnlocation, Quaternion.identity, 0);
 	}
@@ -68,15 +60,14 @@ public class GCtrller : MonoBehaviour {
     private void spawnNPC(int x_pos, int y_pos ) {
     	int which = Random.Range(0, all_npcs.Length);
     	GameObject npc = all_npcs[which];
-    	Debug.Log("Spawning " + npc.name);
 		Vector3 spawnlocation = new Vector3( x_pos, y_pos, 0.0f);
 		GameObject spawned = PhotonNetwork.Instantiate(npc.name, spawnlocation, Quaternion.identity, 0);
-		npcs_in_game.Add(spawned);
+		npcs_in_game.Add(++npc_id, spawned);
+		spawned.GetComponent<Player>().setID(npc_id);
 	}
 
     private void spawnItem(GameObject item, int x_pos, int y_pos){
     	string item_title = item.GetComponent<Item>().item_name;
-    	Debug.Log("Spawning " + item_title);
     	Vector3 spawnlocation = new Vector3( x_pos, y_pos, 0.0f );
     	GameObject spawned = PhotonNetwork.Instantiate(item_title, spawnlocation, Quaternion.identity, 0);
     	items_in_game.Add(spawned);
@@ -86,7 +77,7 @@ public class GCtrller : MonoBehaviour {
 		Vector3 result = obj.transform.position;
 		for(int i = 0; i < arena_panels.Length; ++i){
 		    if(Vector2.Distance(obj.transform.position, arena_panels[i].transform.position) <= 0.5f){
-                result = arena_panels[(i+1)%2].transform.position + new Vector3(0.0f, 1.0f, 0.0f);
+                result = arena_panels[(i+1)%2].transform.position + new Vector3(-0.8f, 0.0f, 0.0f);
 		    }
 		}
 		if(result != obj.transform.position){
@@ -94,30 +85,34 @@ public class GCtrller : MonoBehaviour {
 		}
 	}
 
-	public void npcDied(GameObject which){
-	    
-	    npcs_in_game = countNPC();
-	    Transform location = which.transform;
+	public void playerDied(GameObject which){
+		Transform location = which.transform;
 
-	    int index = -1;
-	    for(int i = 0; i < npcs_in_game.Count; ++i){ 
-	    	if(npcs_in_game[i].GetComponent<Player>().isDead()){
-	    		index = i;
-	    	}
-	    }
-		if(index != -1){
-			npcs_in_game.RemoveAt(index);
-			Destroy(which);
-		}
-		
 		if(PhotonNetwork.isMasterClient){
-			addNPC();
-			int item_no = Random.Range(0, all_game_items.Length - 1);
-			Debug.Log("I need item: " + item_no);
-			spawnItem(all_game_items[item_no], (int) location.position.x, (int) location.position.y);
+			int player_id = which.GetComponent<Player>().player_id;
+			if(which.tag == "NPC"){
+				Debug.Log("NPC died.");
+		        if(npcs_in_game.ContainsKey(player_id)){
+				    PhotonNetwork.Destroy (which);
+				    npcs_in_game.Remove(player_id);
+			    }
+
+			    addNPC();
+			    int item_no = Random.Range(0, all_game_items.Length - 1);
+			    spawnItem(all_game_items[item_no], (int) location.position.x, (int) location.position.y);
+			} else {
+                Debug.Log("Player died.");
+                which.GetComponent<Player>().currentHealth = 100;   // reset health
+                which.GetComponent<Player>().currentEXP -= (int) (which.GetComponent<Player>().currentEXP * 0.2f);
+                Vector3 result = new Vector3(Random.Range(-61,-51), Random.Range(0, -14), 0.0f);
+                which.GetComponent<PlayerController>().teleportPlayer(result);
+			}
+
+			
 		}
 	}
 
+   
 /*
 	IEnumerator deathScene(bool initial, GameObject o) {
 

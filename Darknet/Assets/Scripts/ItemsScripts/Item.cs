@@ -10,6 +10,11 @@ public class Item : Photon.MonoBehaviour {
 	private string description;
 	private bool is_consumed;
 	public Sprite item_sprite;
+	public bool is_picked;
+
+	void Start () {
+        is_picked = false;
+	}
     
 	public Hashtable Consume(){
 		if (consumable) {

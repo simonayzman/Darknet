@@ -60,13 +60,11 @@ public class PlayerController : Photon.MonoBehaviour {
 					distance = Vector2.Distance(playerPosition, mousePosition);
 					if( distance < 0.45){
 						Debug.Log("Ready to pick up da " + gameItem.GetComponent<Item>().getDescription() + ", Bro.");
-						 photonView.RPC("PickUpItem", PhotonTargets.All, (int) gameItem.transform.position.x, 
+						photonView.RPC("PickUpItem", PhotonTargets.AllBuffered, (int) gameItem.transform.position.x, 
 						 	(int) gameItem.transform.position.y, PhotonNetwork.playerName);
 					}
 					else{
-						Debug.Log("Too far, Bro.");
-						//Debug.Log( "Das item est " + gameItem.GetComponent<Item>().description );
-				       
+						Debug.Log("Too far, Bro."); 
 					}
 				}
 			}
