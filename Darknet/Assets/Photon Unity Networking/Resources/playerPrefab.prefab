@@ -146,7 +146,7 @@ MonoBehaviour:
   Armor: 
   currentHealth: 100
   currentMana: 100
-  HP: 100
+  HP: 150
   MP: 100
   STR: 0
   DEX: 0

@@ -2766,7 +2766,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e267d9d436db7484389bf43d0221f6c2, type: 3}
   m_Name: 
@@ -5110,6 +5110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotName: Action1
+  parentSlot: {fileID: 11493002}
 --- !u!114 &11492994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5214,7 +5215,7 @@ MonoBehaviour:
   m_PressTransitionInstaOut: 1
   m_PressForceHoverNormal: 1
   m_SlotGroup: 1
-  m_ID: 1
+  m_ID: 0
   slotname: {fileID: 0}
   onAssign:
     m_PersistentCalls:
@@ -6253,6 +6254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotName: Action2
+  parentSlot: {fileID: 11493102}
 --- !u!114 &11493096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6344,7 +6346,7 @@ MonoBehaviour:
   m_PressTransitionInstaOut: 1
   m_PressForceHoverNormal: 1
   m_SlotGroup: 1
-  m_ID: 2
+  m_ID: 1
   slotname: {fileID: 0}
   onAssign:
     m_PersistentCalls:
