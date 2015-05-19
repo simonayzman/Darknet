@@ -27,49 +27,44 @@ public class DisplayPlayerStat : MonoBehaviour {
 	void Update () {
 		//player = GameObject.FindWithTag ("Player");
 		//Actor actor = player.GetComponent<Actor> ();
-		//player = GameObject.FindWithTag ("Player");
-		GameObject world = GameObject.FindGameObjectWithTag("World");
-		if(world){
-			Debug.Log("Found world.");
-			GameObject player = world.GetComponent<GCtrller>().da_player;
-			if(player){
-				Debug.Log("Found player.");
-				//player.GetComponent<Player>
+		player = GameObject.FindWithTag ("Player");
 
-				if (label == null){
-					Debug.Log ("No label.");
-					return;
-				}
-					
-					if(attribute != "")
-						value = player.GetComponent<Player>().getAttribute(attribute);
-					
-					if(attributeMax != "")
-						valueMax = player.GetComponent<Player>().getAttribute(attributeMax);
-					
-					
-					
-					if (bar != null && value >= 0 && valueMax >= 0)
-						bar.value = ((float) value) / ((float) valueMax);
-					
-					cache = "";
-					if (statName != "")
-						cache += statName + ": ";
-					
-					if (label != null)
-						cache += value.ToString();
-					if (valueMax >= 0)
-						cache += "/" + valueMax.ToString();
-					
-					label.text = cache;
-					
-					
-				
-			}
+		if (player == null){
+			Debug.Log ("No player.");
+			return;
 		}
-		
+		if (label == null){
+			Debug.Log ("No label.");
+			return;
+		}
+
+		if (player != null) {
 
 
+			if(attribute != "")
+				value = player.GetComponent<Player>().getAttribute(attribute);
+
+			if(attributeMax != "")
+				valueMax = player.GetComponent<Player>().getAttribute(attributeMax);
+				
+
+
+			if (bar != null && value >= 0 && valueMax >= 0)
+				bar.value = ((float) value) / ((float) valueMax);
+
+			cache = "";
+			if (statName != "")
+				cache += statName + ": ";
+
+			if (label != null)
+				cache += value.ToString();
+			if (valueMax >= 0)
+				cache += "/" + valueMax.ToString();
+
+			label.text = cache;
+
+
+		}
 
 
 	
