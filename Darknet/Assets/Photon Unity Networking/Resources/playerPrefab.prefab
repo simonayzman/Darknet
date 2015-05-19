@@ -126,6 +126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: 
   inventory: []
+  xpValue: 0
+  is_alive: 0
+  player_id: 0
   currentEXP: 0
   EXPToLevel: 0
   currentLevel: 0
@@ -139,10 +142,11 @@ MonoBehaviour:
   baseMagAtk: 0
   Race: 
   Class: 
+  inventory_capacity: 0
   Weapon: 
   Offhand: 
   Armor: 
-  currentHealth: 100
+  currentHealth: 200
   currentMana: 100
   HP: 0
   MP: 0

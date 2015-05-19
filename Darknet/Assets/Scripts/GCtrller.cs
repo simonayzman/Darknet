@@ -41,7 +41,7 @@ public class GCtrller :  Photon.MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		shouldTeleport(da_player);
+//		shouldTeleport(da_player);
 	}
 
 
@@ -73,17 +73,17 @@ public class GCtrller :  Photon.MonoBehaviour {
     	items_in_game.Add(spawned);
     }
   
-	private void shouldTeleport(GameObject obj){
-		Vector3 result = obj.transform.position;
-		for(int i = 0; i < arena_panels.Length; ++i){
-		    if(Vector2.Distance(obj.transform.position, arena_panels[i].transform.position) <= 0.5f){
-                result = arena_panels[(i+1)%2].transform.position + new Vector3(0.0f, 1.0f, 0.0f);
-		    }
-		}
-		if(result != obj.transform.position){
-			da_player.GetComponent<PlayerController>().teleportPlayer(result);
-		}
-	}
+//	private void shouldTeleport(GameObject obj){
+//		Vector3 result = obj.transform.position;
+//		for(int i = 0; i < arena_panels.Length; ++i){
+//		    if(Vector2.Distance(obj.transform.position, arena_panels[i].transform.position) <= 0.5f){
+  //              result = arena_panels[(i+1)%2].transform.position + new Vector3(0.0f, 1.0f, 0.0f);
+//		    }
+//		}
+//		if(result != obj.transform.position){
+//			da_player.GetComponent<PlayerController>().teleportPlayer(result);
+//		}
+//	}
 
 	public void playerDied(GameObject which){
 		Transform location = which.transform;

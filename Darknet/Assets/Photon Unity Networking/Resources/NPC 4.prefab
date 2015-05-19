@@ -71,16 +71,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4329efa9f474654aaaf5ea60865673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  username: 
+  inventory: []
+  xpValue: 20
+  is_alive: 0
+  player_id: 0
+  currentEXP: 0
+  EXPToLevel: 0
+  currentLevel: 0
+  baseHP: 0
+  baseMP: 0
+  baseSTR: 0
+  baseDEX: 0
+  baseINT: 0
+  baseVIT: 0
+  basePhysAtk: 0
+  baseMagAtk: 0
+  Race: 
+  Class: 
+  inventory_capacity: 0
+  Weapon: 
+  Offhand: 
+  Armor: 
   currentHealth: 100
   currentMana: 100
-  hp: 100
-  mp: 100
-  exp: 0
-  str: 10
-  dex: 10
-  intl: 10
-  level: 10
+  HP: 0
+  MP: 0
+  STR: 0
+  DEX: 0
+  INT: 0
+  VIT: 0
+  physAtk: 0
+  magAtk: 0
 --- !u!114 &11413476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_object: {fileID: 0}
-  death_animation: {fileID: 124266, guid: 881a79238efc1054089ae21048d8f3b9, type: 2}
 --- !u!212 &21227474
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -151,7 +172,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 41d643130c905e549af5e5bc8a1d9786, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 64caf70799bf245c8a3379e7bca4a717, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

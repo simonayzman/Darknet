@@ -131,7 +131,7 @@ using PlayFab.ClientModels;
 			Debug.Log("Name " + result.DisplayName + " updated.");
 			// Unpause and start game.
 			Time.timeScale = 1.0f;
-			PlayFabGameBridge.gameState = 3;
+			PlayFabGameBridge.gameState = 2;
 
 			// if (PlayFabData.AngryBotsModActivated) {
 			//	Application.LoadLevel("Default");

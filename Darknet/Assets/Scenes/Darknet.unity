@@ -149,7 +149,7 @@ MonoBehaviour:
   confirmPasswordLabel: Confirm Password
   nextScene: PF_UserLoginScene
   confirmScene: PF_PurchaseScene
-  playfabBackground: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+  playfabBackground: {fileID: 2800000, guid: da60a1eed6df544329a5e60c93394170, type: 3}
   cursor: {fileID: 2800000, guid: 6227649e97a52314c92b4328c1f0e7cc, type: 3}
   emailNotAvailable: That email address has already been registered.
   usernameNotAvailable: That username has already been already taken.
@@ -273,7 +273,7 @@ MonoBehaviour:
   passwordLabel: Password
   nextScene: PF_PurchaseScene
   previousScene: PF_UserRegisterScene
-  playfabBackground: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+  playfabBackground: {fileID: 2800000, guid: da60a1eed6df544329a5e60c93394170, type: 3}
   cursor: {fileID: 2800000, guid: 6227649e97a52314c92b4328c1f0e7cc, type: 3}
   accountNotFound: That account could not be found.
   accountBanned: That account has been banned.
@@ -330,7 +330,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 10fb4744985f844e8a956f2d01d77b93, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .400000006
+  m_Volume: .300000012
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -505,7 +505,7 @@ Prefab:
     - target: {fileID: 11463584, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
       propertyPath: playfabBackground
       value: 
-      objectReference: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+      objectReference: {fileID: 2800000, guid: da60a1eed6df544329a5e60c93394170, type: 3}
     - target: {fileID: 11463584, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
       propertyPath: cursor
       value: 
@@ -517,7 +517,7 @@ Prefab:
     - target: {fileID: 11463586, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
       propertyPath: playfabBackground
       value: 
-      objectReference: {fileID: 2800000, guid: fda314e3b9c92a742b58cf1c43190462, type: 3}
+      objectReference: {fileID: 2800000, guid: da60a1eed6df544329a5e60c93394170, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13b2dd691342444dcb275e3f864876f3, type: 2}
   m_RootGameObject: {fileID: 1474319987}
