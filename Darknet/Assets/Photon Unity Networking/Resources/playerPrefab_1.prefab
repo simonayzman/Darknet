@@ -126,30 +126,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: 
   inventory: []
+<<<<<<< HEAD
   xpValue: 0
   is_alive: 0
   player_id: 0
+||||||| merged common ancestors
+=======
+  xpValue: 0
+  is_alive: 1
+  player_id: 0
+>>>>>>> origin/master
   currentEXP: 0
-  EXPToLevel: 0
-  currentLevel: 0
-  baseHP: 0
-  baseMP: 0
-  baseSTR: 0
-  baseDEX: 0
-  baseINT: 0
-  baseVIT: 0
-  basePhysAtk: 0
-  baseMagAtk: 0
+  EXPToLevel: 100
+  currentLevel: 1
+  baseSTR: 1
+  baseDEX: 1
+  baseINT: 1
+  baseVIT: 1
+  basePhysAtk: 10
+  baseMagAtk: 10
   Race: 
   Class: 
+<<<<<<< HEAD
   inventory_capacity: 0
+||||||| merged common ancestors
+=======
+  inventory_capacity: 6
+>>>>>>> origin/master
   Weapon: 
   Offhand: 
   Armor: 
   currentHealth: 200
   currentMana: 100
-  HP: 0
-  MP: 0
+  HP: 150
+  MP: 100
   STR: 0
   DEX: 0
   INT: 0
