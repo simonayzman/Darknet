@@ -236,13 +236,7 @@ namespace UnityEngine.UI
 
 		void Update (){
 
-			if ( Input.GetAxisRaw("Action1") > 0.0) {
-				 //Invoke the click event
-				if (this.onClick != null)
-					this.onClick.Invoke (this);
 
-				SpellCast ();
-			}
 		}
 
 		public bool SpellCast()
