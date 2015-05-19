@@ -15,6 +15,8 @@ public class Player : Photon.MonoBehaviour {
 	public int currentEXP;
 	public int EXPToLevel;
 	public int currentLevel;
+	public int baseHP;
+	public int baseMP;
 	public int baseSTR;
 	public int baseDEX;
 	public int baseINT;
@@ -231,7 +233,7 @@ public class Player : Photon.MonoBehaviour {
 
     public string printProfile() {
 		//{"STR": "10", "DEX": "20", "INT": "10", "VIT": "10", "BaseHP": "100", "BaseMP": "100", "BasePhysAtk": "10", "BaseMagAtk": "5"}
-		return "{\"STR\": \""+baseSTR+"\", \"DEX\": \""+baseDEX+"\", \"INT\": \""+baseINT+"\", \"VIT\": \""+baseVIT+"\", \"BaseHP\": \""+HP+"\", \"BaseMP\": \""+MP+"\", \"BasePhysAtk\": \""+basePhysAtk+"\", \"BaseMagAtk\": \""+baseMagAtk+"\"}";
+		return "{\"STR\": \""+baseSTR+"\", \"DEX\": \""+baseDEX+"\", \"INT\": \""+baseINT+"\", \"VIT\": \""+baseVIT+"\", \"BaseHP\": \""+baseHP+"\", \"BaseMP\": \""+baseMP+"\", \"BasePhysAtk\": \""+basePhysAtk+"\", \"BaseMagAtk\": \""+baseMagAtk+"\"}";
 	}
 
     public void setID(int id){

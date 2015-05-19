@@ -31,7 +31,5 @@ EditorBuildSettings:
     path: Assets/Photon Unity Networking/Demos/DemoWorker/DemoWorkerGame-Scene.unity
   - enabled: 0
     path: Assets/Photon Unity Networking/Demos/MarcoPolo-Tutorial/MarcoPolo-Scene.unity
-  - enabled: 0
-    path: Assets/Scenes/Test/Town-Map.unity
   - enabled: 1
-    path: Assets/Scenes/Darknet.unity
+    path: Assets/Scenes/Test/Town-Map.unity
