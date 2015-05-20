@@ -18,24 +18,24 @@ public class Movement : MonoBehaviour {
 		/*9*/
 		if (Input.GetAxisRaw ("Horizontal") > 0 && Input.GetAxisRaw ("Vertical") > 0)
 		{
-		    animator.SetInteger("Direction", 9);
+		    if(animator) animator.SetInteger("Direction", 9);
 			transform.position += new Vector3 (speed * Time.deltaTime, speed * Time.deltaTime, 0.0f);
 		}
 		/*3*/
 		else if (Input.GetAxisRaw ("Horizontal") > 0 && Input.GetAxisRaw ("Vertical") < 0)
 		{
-			animator.SetInteger("Direction", 3);
+			if(animator)animator.SetInteger("Direction", 3);
 			transform.position -= new Vector3 (-speed * Time.deltaTime, speed * Time.deltaTime, 0.0f);
 		}
 		/*7*/	
 		else if (Input.GetAxisRaw ("Horizontal") < 0 && Input.GetAxisRaw ("Vertical") > 0)
 		{
-			animator.SetInteger("Direction", 7);
+			if(animator)animator.SetInteger("Direction", 7);
 			transform.position += new Vector3 (-speed * Time.deltaTime, speed * Time.deltaTime, 0.0f);
 		}
 		/*1*/
 		else if (Input.GetAxisRaw ("Horizontal") < 0 && Input.GetAxisRaw ("Vertical") < 0){
-			animator.SetInteger("Direction", 1);
+			if(animator)animator.SetInteger("Direction", 1);
 			transform.position -= new Vector3 (speed * Time.deltaTime, speed * Time.deltaTime, 0.0f);
 		}
 
@@ -44,24 +44,24 @@ public class Movement : MonoBehaviour {
 		/*6*/
 		else if (Input.GetAxisRaw ("Horizontal") > 0)
 		{
-		    animator.SetInteger("Direction", 6);
+		    if(animator)animator.SetInteger("Direction", 6);
 			transform.position += new Vector3 (speed * Time.deltaTime, 0.0f, 0.0f);
 		}
 		/*4*/
 		else if (Input.GetAxisRaw ("Horizontal") < 0)
 		{
-			animator.SetInteger("Direction", 4);
+			if(animator)animator.SetInteger("Direction", 4);
 			transform.position -= new Vector3 (speed * Time.deltaTime, 0.0f, 0.0f);
 		}
 		/*8*/	
 		else if (Input.GetAxisRaw ("Vertical") > 0)
 		{
-			animator.SetInteger("Direction", 8);
+			if(animator)animator.SetInteger("Direction", 8);
 			transform.position += new Vector3 (0.0f, speed * Time.deltaTime, 0.0f);
 		}
 		/*5*/
 		else if (Input.GetAxisRaw ("Vertical") < 0){
-			animator.SetInteger("Direction", 5);
+			if(animator)animator.SetInteger("Direction", 5);
 			transform.position -= new Vector3 (0.0f, speed * Time.deltaTime, 0.0f);
 		}
 	
