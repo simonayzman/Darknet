@@ -39,29 +39,29 @@ public class DisplayPlayerStat : MonoBehaviour {
 					return;
 				}
 					
-					if(attribute != "")
-						value = player.GetComponent<Player>().getAttribute(attribute);
-					
-					if(attributeMax != "")
-						valueMax = player.GetComponent<Player>().getAttribute(attributeMax);
-					
-					
-					
-					if (bar != null && value >= 0 && valueMax >= 0)
-						bar.value = ((float) value) / ((float) valueMax);
-					
-					cache = "";
-					if (statName != "")
-						cache += statName + ": ";
-					
-					if (label != null)
-						cache += value.ToString();
-					if (valueMax >= 0)
-						cache += "/" + valueMax.ToString();
-					
-					label.text = cache;
-					
-					
+				if(attribute != "")
+					value = player.GetComponent<Player>().getAttribute(attribute);
+				
+				if(attributeMax != "")
+					valueMax = player.GetComponent<Player>().getAttribute(attributeMax);
+				
+				
+				
+				if (bar != null && value >= 0 && valueMax >= 0)
+					bar.value = ((float) value) / ((float) valueMax);
+				
+				cache = "";
+				if (statName != "")
+					cache += statName + ": ";
+				
+				if (label != null)
+					cache += value.ToString();
+				if (valueMax >= 0)
+					cache += "/" + valueMax.ToString();
+				
+				label.text = cache;
+				
+				
 				
 			}
 		}

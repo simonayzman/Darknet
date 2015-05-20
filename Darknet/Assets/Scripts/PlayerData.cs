@@ -11,7 +11,13 @@ public class PlayerData : MonoBehaviour {
 	public GameObject chatGUI;
 
 	void Start() {
-		myPlayer = GameObject.FindWithTag("Player").GetComponent<Player>();
+		GameObject world = GameObject.FindGameObjectWithTag("World");
+        if(world){
+       		GameObject player = world.GetComponent<GCtrller>().da_player;
+       		if(player){
+       			myPlayer = player.GetComponent<Player>();
+       		}
+       	}
 		PlayerConfiguration();
 	}
 	
@@ -42,8 +48,8 @@ public class PlayerData : MonoBehaviour {
 		if (result.Data.ContainsKey("Level")) {
 			myPlayer.currentEXP = int.Parse(result.Data["CurrentExperience"].Value);
 			myPlayer.currentLevel = int.Parse(result.Data["Level"].Value);
-			myPlayer.baseHP = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["BaseHP"].Value);
-			myPlayer.baseMP = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["BaseMP"].Value);
+			myPlayer.HP = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["BaseHP"].Value);
+			myPlayer.MP = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["BaseMP"].Value);
 			myPlayer.baseSTR = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["STR"].Value);
 			myPlayer.baseDEX = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["DEX"].Value);
 			myPlayer.baseINT = int.Parse(JSON.Parse(result.Data["Attributes"].Value)["INT"].Value);
