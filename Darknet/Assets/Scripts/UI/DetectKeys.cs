@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 public class DetectKeys : MonoBehaviour {
 	[SerializeField] public string slotName;
-//	[SerializeField] public UISpellSlot parentSlot;
+	[SerializeField] public UISpellSlot parentSlot;
 
 	// Use this for initialization
 	void Start (){
@@ -18,9 +18,10 @@ public class DetectKeys : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-//		if (Input.GetAxisRaw (slotName) > 0.0)
-//			parentSlot.SpellCast ();
+		if (parentSlot != null && Input.GetAxisRaw (slotName) > 0.0) {
+			Debug.Log ("Casting " + slotName);
+			parentSlot.SpellCast ();
+		}
 
 	
 	}
