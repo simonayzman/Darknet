@@ -1,3 +1,9 @@
+// Darknet - Massively Multiplayer Online Role-Plaing Game (MMORPG) - CS Capstone 2015
+// Simon Ayzman, Cammie Storey, Slavisa Djukic, Raymond Liang, Christian Diaz
+
+// Raymond Liang
+// Taken from Playfab
+
 using System;
 using System.Collections.Generic;
 using ExitGames.Client.Photon.Chat;

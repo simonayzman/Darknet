@@ -1,8 +1,12 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿// Darknet - Massively Multiplayer Online Role-Plaing Game (MMORPG) - CS Capstone 2015
+// Simon Ayzman, Cammie Storey, Slavisa Djukic, Raymond Liang, Christian Diaz
+
+// Christian Diaz
 //I grabbed this script online, it works perfectly but I dont remember where I got it from.
 //Its a basic camera script. Camera follows an object, using dampTime to cause a smooth transition. 
 
+using UnityEngine;
+using System.Collections;
 
 public class CamFollowObj : MonoBehaviour {
 

@@ -144,9 +144,9 @@ MonoBehaviour:
   Weapon: 
   Offhand: 
   Armor: 
-  currentHealth: 160
+  currentHealth: 120
   currentMana: 80
-  HP: 240
+  HP: 150
   MP: 100
   STR: 0
   DEX: 0
