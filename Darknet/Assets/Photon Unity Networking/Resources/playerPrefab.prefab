@@ -129,7 +129,7 @@ MonoBehaviour:
   xpValue: 0
   is_alive: 1
   player_id: 0
-  currentEXP: 0
+  currentEXP: 40
   EXPToLevel: 100
   currentLevel: 1
   baseSTR: 1
@@ -144,9 +144,9 @@ MonoBehaviour:
   Weapon: 
   Offhand: 
   Armor: 
-  currentHealth: 100
+  currentHealth: 160
   currentMana: 80
-  HP: 150
+  HP: 240
   MP: 100
   STR: 0
   DEX: 0

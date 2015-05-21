@@ -104,7 +104,7 @@ public class GCtrller :  Photon.MonoBehaviour {
                 Debug.Log("Player died.");
                 which.GetComponent<Player>().currentHealth = 100;   // reset health
                 which.GetComponent<Player>().currentEXP -= (int) (which.GetComponent<Player>().currentEXP * 0.2f);
-                Vector3 result = new Vector3(Random.Range(-61,-51), Random.Range(0, -14), 0.0f);
+                Vector3 result = new Vector3(Random.Range(-58,-55), Random.Range(-5, -9), 0.0f);
                 which.GetComponent<PlayerController>().teleportPlayer(result);
 			}
 

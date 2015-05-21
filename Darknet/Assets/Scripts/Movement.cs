@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour {
 
 	public void InputMovement() {
 	
-	animator.SetInteger("Direction", 0);
+		if(animator) animator.SetInteger("Direction", 0);
 		
 		/*9*/
 		if (Input.GetAxisRaw ("Horizontal") > 0 && Input.GetAxisRaw ("Vertical") > 0)

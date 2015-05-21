@@ -79,8 +79,7 @@ public class Player : Photon.MonoBehaviour {
 	// OnSerializeNetworkView() used to customized synchronization of variables in a script watched by the network view.
 
     void Start(){
-    	inventory_capacity = 4;
-    	is_alive = true;
+
     }
 
 	// void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info) {
